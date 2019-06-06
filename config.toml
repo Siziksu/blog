@@ -1,0 +1,62 @@
+baseurl         = "https://siziksu.github.io/blog/"
+theme           = "casper-two"
+languageCode    = "en-US"
+disqusShortname = ""
+paginate        = 6
+#SectionPagesMenu = "main"
+
+[params]
+  title       = "Siziksu's Blog"
+  subtitle    = "Blog about Linux, Kotlin and Android"
+  copyright   = "© 2019"
+
+  cover       = "images/architecture-bridge-buildings-2129814.jpg"
+  description = "Blog with the intention to bring you some usefull posts to help you with Linux, Android and Kotlin."
+  metaDescription = "Blog about Linux, Kotlin and Android"
+  googleAnalytics = ""
+  customCSS = []
+  RSSLink = ""
+
+  twitterName = ""
+  fbName = ""
+  githubName = "Siziksu"
+  linkedinName = "esteban-latre"
+
+  logo = ""
+  orgName = "Esteban Latre"
+  orgWebsite = "https://siziksu.github.io/blog/"
+  orgDescription = "Android Developer. Kotlin and Linux enthusiast"
+
+  author = "Esteban Latre"
+  authorAvatar = "images/profile_picture.png"
+  authorLocation = "Barcelona, Catalunya"
+  authorWebsite = "https://siziksu.github.io/blog/"
+  authorDescription = "Android Developer. Kotlin and Linux enthusiast"
+
+  pageNotFoundTitle = "404 - Page not found"
+
+  #casper or caspertwo
+  singleViewStyle = "casper"
+
+[permalinks]
+  post = "/:slug/"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 200
+
+[[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 100
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  weight = 99
+
+[[menu.main]]
+  name = "Google"
+  url = "https://google.com/"
+  weight = 95
