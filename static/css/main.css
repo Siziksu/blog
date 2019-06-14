@@ -128,6 +128,7 @@ blockquote cite a {
 pre, code {
     font-family: monospace, monospace;
     font-size: 1rem;
+    line-height: 1.2em;
 }
 
 pre {
@@ -136,8 +137,6 @@ pre {
     margin: 0.5em 0 0.5em;
     border: 1px solid #000;
     color: #e5eff5;
-    font-size: 1rem;
-    line-height: 1.2em;
     background: #0e0f11;
     border-radius: 5px
 }
@@ -145,8 +144,6 @@ pre {
 code {
     max-width: 100%;
     padding: 0 0.5em 0;
-    font-size: 1rem;
-    line-height: 1.2em;
     font-weight: normal !important;
     background: #e5eff5;
     border-radius: 5px;

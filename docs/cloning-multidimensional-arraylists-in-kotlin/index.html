@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Siziksu&#39;s Blog &middot; Linux locations</title>
+    <title>Siziksu&#39;s Blog &middot; Cloning Multidimensional ArrayLists in Kotlin</title>
     <link rel="shortcut icon" href="https://siziksu.github.io/blog/favicon.ico" />
-    <link rel="canonical" href="https://siziksu.github.io/blog/linux-locations/" />
+    <link rel="canonical" href="https://siziksu.github.io/blog/cloning-multidimensional-arraylists-in-kotlin/" />
     <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/main.css" />
     <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/page.css" />
@@ -45,34 +45,57 @@
     </header>
     <article class="single_post">
       <header class="single_post">
-        <figure style="background-image: url(https://siziksu.github.io/blog/images/architecture-bridge-buildings-1168940.jpg)"></figure>
+        <figure style="background-image: url(https://siziksu.github.io/blog/images/adventure-beautiful-dawn-2387418.jpg)"></figure>
       </header>
       <section class="single_post">
         <section class="single_post_meta">
-          <time class="meta_date" datetime="2019-06-03">3 June 2019</time>
-          <span class="date_term_divider">|</span><a href="https://siziksu.github.io/blog/tags/linux/" class="term">#linux</a><a href="https://siziksu.github.io/blog/tags/locations/" class="term">#locations</a>
+          <time class="meta_date" datetime="2019-06-14">14 June 2019</time>
+          <span class="date_term_divider">|</span><a href="https://siziksu.github.io/blog/tags/kotlin/" class="term">#kotlin</a><a href="https://siziksu.github.io/blog/tags/arraylist/" class="term">#arraylist</a><a href="https://siziksu.github.io/blog/tags/clone/" class="term">#clone</a>
         </section>
         <section class="title">
-          <h1>Linux locations</h1>
+          <h1>Cloning Multidimensional ArrayLists in Kotlin</h1>
           
         </section>
-<p>One of the things that we always need to know when working with an operating system, is where the things are.</p>
+<p>This is a very fast and efficient way to clone complex ArrayLists. This way you can avoid the use of serializing/deserizlizing, that will have a hard impact compared with this solution.</p>
 
-<p><strong>Repositories</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Kotlin" data-lang="Kotlin"><span style="color:#66d9ef">import</span> com.simfy.core.UnitTest
+<span style="color:#66d9ef">import</span> org.junit.Assert.assertEquals
+<span style="color:#66d9ef">import</span> org.junit.Test
 
-<p>The repositories are located in the folder <code>/etc/apt/sources.list.d/</code>.</p>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ArrayListsCloneTests</span> : UnitTest() {
 
-<p><strong>Path</strong></p>
+    @Test
+    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">`test 1 cloning an array list of array lists`</span>() {
+        <span style="color:#66d9ef">val</span> original = <span style="color:#e6db74">&#34;original&#34;</span>
+        <span style="color:#66d9ef">val</span> mutated = <span style="color:#e6db74">&#34;mutated&#34;</span>
 
-<p>The <code>$PATH</code> is set in the file <code>/etc/environment</code>.</p>
+        <span style="color:#66d9ef">val</span> list = arrayListOf(arrayListOf(original))
 
-<p><strong>Desktop files</strong></p>
+        <span style="color:#66d9ef">val</span> clone = list.map { it.toMutableList() <span style="color:#66d9ef">as</span> ArrayList&lt;String&gt; }
 
-<p>The <code>*.desktop</code> files are located in the folders <code>~/.local/share/applications/</code> and <code>/usr/share/applications/</code>.</p>
+        clone<span style="color:#a6e22e">[0][0]</span> = mutated
 
-<p><strong>Software installation folder</strong></p>
+        assertEquals(original, list<span style="color:#a6e22e">[0][0]</span>)
+        assertEquals(mutated, clone<span style="color:#a6e22e">[0][0]</span>)
+    }
 
-<p>If you are installing software manually, for instance a software downloaded as a <code>tar.gz</code> file, should be installed in the folder <code>/opt/</code>.</p>
+    @Test
+    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">`test 2 cloning an array list of objects that include an array list`</span>() {
+        <span style="color:#66d9ef">val</span> original = <span style="color:#e6db74">&#34;original&#34;</span>
+        <span style="color:#66d9ef">val</span> mutated = <span style="color:#e6db74">&#34;mutated&#34;</span>
+
+        <span style="color:#66d9ef">val</span> list = arrayListOf(TestObject(arrayListOf(original)))
+
+        <span style="color:#66d9ef">val</span> clone = list.map { TestObject(it.list.toMutableList() <span style="color:#66d9ef">as</span> ArrayList&lt;String&gt;) }
+
+        clone<span style="color:#a6e22e">[0]</span>.list<span style="color:#a6e22e">[0]</span> = mutated
+
+        assertEquals(original, list<span style="color:#a6e22e">[0]</span>.list<span style="color:#a6e22e">[0]</span>)
+        assertEquals(mutated, clone<span style="color:#a6e22e">[0]</span>.list<span style="color:#a6e22e">[0]</span>)
+    }
+}
+
+<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestObject</span>(<span style="color:#66d9ef">val</span> list: ArrayList&lt;String&gt;)</code></pre></div>
 
       </section>
       <footer class="single_post">
@@ -94,14 +117,14 @@
             <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg></div>
             <div class="shuffle_posts">
               <ul>
-              <li><a href="https://siziksu.github.io/blog/markdown-syntax-guide/">Markdown Syntax Guide</a></li>
-              <li><a href="https://siziksu.github.io/blog/cloning-multidimensional-arraylists-in-kotlin/">Cloning Multidimensional ArrayLists in Kotlin</a></li>
               
+              <li><a href="https://siziksu.github.io/blog/markdown-syntax-guide/">Markdown Syntax Guide</a></li>
               <li><a href="https://siziksu.github.io/blog/welcome-post/">Welcome post</a></li>
-              <li><a href="https://siziksu.github.io/blog/linux-apt-commands/">Linux &#39;apt&#39; commands</a></li></ul>
+              <li><a href="https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/">Backing up and restoring the Linux configuration</a></li>
+              <li><a href="https://siziksu.github.io/blog/linux-locations/">Linux locations</a></li></ul>
             </div>
             <footer>
-                <a href="https://siziksu.github.io/blog/tags/linux/">See all related posts →</a>
+                <a href="https://siziksu.github.io/blog/tags/kotlin/">See all related posts →</a>
             </footer>
           </div>
         </section>
@@ -109,21 +132,21 @@
         
         <section class="post_card">
           
-          <a class="post_card_image_link" href="https://siziksu.github.io/blog/welcome-post/">
-            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/grass-nature-plants-12141.jpg)"></div>
+          <a class="post_card_image_link" href="https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/">
+            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/architecture-building-contemporary-258846.jpg)"></div>
           </a>
           
           <div class="post_card_content">
-            <a class="post_card_content_link" href="https://siziksu.github.io/blog/welcome-post/">
+            <a class="post_card_content_link" href="https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/">
               <header class="post_card_header">
                 
-                <span class="post_card_tags"> #welcome</span>
+                <span class="post_card_tags"> #linux #dconf #backup</span>
                 
-                <h1 class="post_card_title">Welcome post</h1>
+                <h1 class="post_card_title">Backing up and restoring the Linux configuration</h1>
               </header>
               <section class="post_card_excerpt">
                 
-                <p>Introduction to the blog.</p>
+                <p>This post will explain how to backup the Linux configuration (dconf keys).</p>
                 
               </section>
             </a>
@@ -135,34 +158,6 @@
         </section>
 
         
-        
-        <section class="post_card">
-          
-          <a class="post_card_image_link" href="https://siziksu.github.io/blog/linux-apt-commands/">
-            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/adorable-animal-canine-1254140.jpg)"></div>
-          </a>
-          
-          <div class="post_card_content">
-            <a class="post_card_content_link" href="https://siziksu.github.io/blog/linux-apt-commands/">
-              <header class="post_card_header">
-                
-                <span class="post_card_tags"> #linux #apt</span>
-                
-                <h1 class="post_card_title">Linux &#39;apt&#39; commands</h1>
-              </header>
-              <section class="post_card_excerpt">
-                
-                <p>This post will have a look at the Linux &lsquo;apt&rsquo; and &lsquo;apt-get&rsquo; package tools.</p>
-                
-              </section>
-            </a>
-            <footer class="post_card_meta">
-              <img class="author_profile_image" src="https://siziksu.github.io/blog/images/profile_picture.png" alt="Author" />
-              <span class="post_card_author">Esteban Latre</span>
-            </footer>
-          </div>
-        </section>
-
         
       </aside>
     </article>

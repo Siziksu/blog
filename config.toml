@@ -19,7 +19,8 @@ pygmentsCodeFences=true
                 "css/list.css", 
                 "css/terms.css", 
                 "css/taxonomy.css", 
-                "css/post_card.css"]
+                "css/post_card.css", 
+                "css/media.css"]
 
   githubName = "Siziksu"
   linkedinName = "esteban-latre"

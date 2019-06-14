@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Jun 2019 12:56:50 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 14 Jun 2019 17:56:50 +0200</lastBuildDate>
     
 	<atom:link href="https://siziksu.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>arraylist</title>
+      <link>https://siziksu.github.io/blog/tags/arraylist/</link>
+      <pubDate>Fri, 14 Jun 2019 17:56:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/arraylist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>clone</title>
+      <link>https://siziksu.github.io/blog/tags/clone/</link>
+      <pubDate>Fri, 14 Jun 2019 17:56:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/clone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kotlin</title>
+      <link>https://siziksu.github.io/blog/tags/kotlin/</link>
+      <pubDate>Fri, 14 Jun 2019 17:56:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/kotlin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>backup</title>
@@ -44,15 +71,6 @@
       <pubDate>Fri, 07 Jun 2019 21:30:50 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/tags/constants/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kotlin</title>
-      <link>https://siziksu.github.io/blog/tags/kotlin/</link>
-      <pubDate>Fri, 07 Jun 2019 21:30:50 +0200</pubDate>
-      
-      <guid>https://siziksu.github.io/blog/tags/kotlin/</guid>
       <description></description>
     </item>
     
