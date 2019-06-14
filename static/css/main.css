@@ -45,8 +45,13 @@ body {
     -moz-font-feature-settings: "liga" on;
 }
 
+br {
+    line-height: 1.6em;
+}
+
 p {
     margin: 1em 0 1em;
+    line-height: 1.4em;
 }
 
 img {
@@ -104,6 +109,7 @@ blockquote, q {
 blockquote {
     max-width: 100%;
     margin: 1.5em 0 1.5em;
+    line-height: 1.4em;
     padding: 0 1.5em;
     border-left: 3px solid #3eb0ef
 }

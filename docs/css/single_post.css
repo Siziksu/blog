@@ -95,7 +95,7 @@ a.term + a.term {
 footer.single_post {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 20px 30px;
+    padding: 0 30px;
     background: #fff;
 }
 
@@ -105,7 +105,7 @@ section.author {
     flex-direction: row;
     align-items: center;
     justify-content: initial;
-    margin-top: 40px;
+    margin-top: 0;
     font-family: Segoe UI, Open Sans, sans-serif;
 }
 
@@ -217,7 +217,7 @@ div.shuffle_posts li a {
     padding: 15px 0;
     border-bottom: 1px solid hsla(0, 0%, 100%, .3);
     color: #fff;
-    font-weight: 500;
+    font-weight: normal;
     vertical-align: top;
     opacity: .8;
     transition: opacity .3s ease;
