@@ -1,0 +1,4 @@
+        <nav class="single_post">
+          {{if .PrevInSection}}<a class="older_post" href="{{ .PrevInSection.RelPermalink }}">&larr; <span class="hide">Previous Post</span></a>{{else}}<span>&nbsp;</span>{{end}}
+          {{if .NextInSection}}<a class="newer_post" href="{{ .NextInSection.RelPermalink }}"><span class="hide">Next Post</span> &rarr;</a>{{else}}<span>&nbsp;</span>{{end}}
+        </nav>

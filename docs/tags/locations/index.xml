@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>locations on Siziksu&#39;s Blog</title>
+    <link>https://siziksu.github.io/blog/tags/locations/</link>
+    <description>Recent content in locations on Siziksu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 03 Jun 2019 21:30:50 +0200</lastBuildDate>
+    
+	<atom:link href="https://siziksu.github.io/blog/tags/locations/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux locations</title>
+      <link>https://siziksu.github.io/blog/linux-locations/</link>
+      <pubDate>Mon, 03 Jun 2019 21:30:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/linux-locations/</guid>
+      <description>One of the things that we always need to know when working with an operating system, is where the things are.
+Repositories
+The repositories are located in the folder /etc/apt/sources.list.d/.
+Path
+The $PATH is set in the file /etc/environment.
+Desktop files
+The *.desktop files are located in the folders ~/.local/share/applications/ and /usr/share/applications/.
+Software installation folder
+If you are installing software manually, for instance a software downloaded as a tar.gz file, should be installed in the folder /opt/.</description>
+    </item>
+    
+  </channel>
+</rss>

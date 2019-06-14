@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apt on Siziksu&#39;s Blog</title>
+    <link>https://siziksu.github.io/blog/tags/apt/</link>
+    <description>Recent content in apt on Siziksu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Jun 2019 21:30:50 +0200</lastBuildDate>
+    
+	<atom:link href="https://siziksu.github.io/blog/tags/apt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Linux &#39;apt&#39; commands</title>
+      <link>https://siziksu.github.io/blog/linux-apt-commands/</link>
+      <pubDate>Tue, 04 Jun 2019 21:30:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/linux-apt-commands/</guid>
+      <description>There are two package tools, apt and apt-get. apt is just the rework of apt-get.
+apt install apt-get install Installs a package apt remove apt-get remove Removes a package apt purge apt-get purge Removes package with configuration apt update apt-get update Updates the database of the packages apt upgrade apt-get upgrade Upgrades all upgradeable packages apt autoremove	apt-get autoremove Removes unwanted packages apt full-upgrade apt-get dist-upgrade Upgrades packages with auto-handling of dependencies apt search apt-cache search Searches for packages apt show apt-cache show Shows package details apt list Lists packages with criteria (installed, upgradeable etc) apt edit-sources Edits sources list Install</description>
+    </item>
+    
+  </channel>
+</rss>

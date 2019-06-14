@@ -1,42 +1,35 @@
-baseurl         = "https://siziksu.github.io/blog/"
-theme           = "casper-two"
-languageCode    = "en-US"
-disqusShortname = ""
-paginate        = 6
-#SectionPagesMenu = "main"
+title = "Siziksu's Blog"
+baseURL = "https://siziksu.github.io/blog/"
+languageCode = "en-us"
+publishDir = "docs"
+paginate = 6
+pygmentsCodeFences=true
 
 [params]
-  title       = "Siziksu's Blog"
-  subtitle    = "Blog about Linux, Kotlin and Android"
-  copyright   = "© 2019"
+  description = "Blog about Linux, Kotlin, Android, Git and more"
+  copyright = "© 2019"
 
-  cover       = "images/architecture-bridge-buildings-2129814.jpg"
-  description = "Blog with the intention to bring you some usefull posts to help you with Linux, Android and Kotlin."
-  metaDescription = "Blog about Linux, Kotlin and Android"
-  googleAnalytics = ""
-  customCSS = []
-  RSSLink = ""
+  cover = "images/architecture-bridge-buildings-2129814.jpg"
+  customCSS = ["css/main.css", 
+                "css/nav.css", 
+                "css/page.css", 
+                "css/pagination.css", 
+                "css/single_page.css", 
+                "css/single_post.css", 
+                "css/list.css", 
+                "css/terms.css", 
+                "css/taxonomy.css", 
+                "css/post_card.css"]
 
-  twitterName = ""
-  fbName = ""
   githubName = "Siziksu"
   linkedinName = "esteban-latre"
-
-  logo = ""
-  orgName = "Esteban Latre"
-  orgWebsite = "https://siziksu.github.io/blog/"
-  orgDescription = "Android Developer. Kotlin and Linux enthusiast"
 
   author = "Esteban Latre"
   authorAvatar = "images/profile_picture.png"
   authorLocation = "Barcelona, Catalunya"
-  authorWebsite = "https://siziksu.github.io/blog/"
-  authorDescription = "Android Developer. Kotlin and Linux enthusiast"
+  authorDescription = "Android Developer. Kotlin and Linux enthusiast."
 
-  pageNotFoundTitle = "404 - Page not found"
-
-  #casper or caspertwo
-  singleViewStyle = "casper"
+  randomImages = 4
 
 [permalinks]
   post = "/:slug/"
@@ -49,14 +42,10 @@ paginate        = 6
 [[menu.main]]
   name = "Tags"
   url = "/tags/"
-  weight = 100
+  weight = 199
 
 [[menu.main]]
   name = "Categories"
   url = "/categories/"
-  weight = 99
-
-[[menu.main]]
-  name = "Google"
-  url = "https://google.com/"
-  weight = 95
+  weight = 198
+  

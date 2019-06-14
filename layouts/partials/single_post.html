@@ -1,0 +1,14 @@
+    <article class="single_post">
+{{ partial "single_post_header" . }}
+{{ partial "single_post_content" . }}
+{{ partial "single_post_footer" . }}
+      <aside class="read_next">
+{{ partial "random_next_post_card" . }}
+        {{with .PrevInSection}}
+{{ partial "post_card" . }}
+        {{end}}
+        {{with .NextInSection}}
+{{ partial "post_card" . }}
+        {{end}}
+      </aside>
+    </article>

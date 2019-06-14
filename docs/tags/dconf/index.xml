@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dconf on Siziksu&#39;s Blog</title>
+    <link>https://siziksu.github.io/blog/tags/dconf/</link>
+    <description>Recent content in dconf on Siziksu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jun 2019 12:56:50 +0200</lastBuildDate>
+    
+	<atom:link href="https://siziksu.github.io/blog/tags/dconf/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Backing up and restoring the Linux configuration</title>
+      <link>https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/</link>
+      <pubDate>Sun, 09 Jun 2019 12:56:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/</guid>
+      <description>Linux stores the configuration and settings in a dconf database that consists of a single file in binary format. The format is defined as gvdb (GVariant Database file). It is a simple database file format that stores a mapping from strings to GVariant values in a way that is extremely efficient for lookups.
+The GNOME database file for each user is by default ~/.config/dconf/user. To explore/edit the dconf database, you can use the dconf Editor.</description>
+    </item>
+    
+  </channel>
+</rss>

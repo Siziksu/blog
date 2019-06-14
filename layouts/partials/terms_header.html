@@ -1,0 +1,8 @@
+      <header class="terms">{{ $data := .Data }}
+        <section>
+          <h1>{{ title $data.Plural }}</h1>
+          <p>{{ $data := .Data }} {{ range $key, $value := .Data.Terms.Alphabetical }}
+              <a href="{{ $.Site.BaseURL }}{{ $data.Plural }}/{{ $value.Name | urlize }}">{{ $value.Name }}</a> ({{ $value.Count }})&nbsp;{{ end }}
+          </p>
+        </section>
+      </header>

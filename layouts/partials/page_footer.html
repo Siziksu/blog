@@ -1,0 +1,10 @@
+    <footer class="page">
+      <section>
+        <p>{{ .Site.Params.author }} {{ .Site.Params.copyright }}</p>
+        <nav>
+          <a href="/blog/">Latest Posts</a>
+          {{with .Site.Params.githubName}}<a href="https://github.com/{{.}}" target="_blank" rel="noopener">Github</a>{{end}}
+          {{with .Site.Params.linkedinName}}<a href="https://www.linkedin.com/in/{{.}}" target="_blank" rel="noopener">LinkedIn</a>{{end}}
+        </nav>
+      </section> 
+    </footer>

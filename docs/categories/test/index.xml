@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on Siziksu&#39;s Blog</title>
+    <link>https://siziksu.github.io/blog/categories/test/</link>
+    <description>Recent content in test on Siziksu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Jun 2019 13:30:48 +0200</lastBuildDate>
+    
+	<atom:link href="https://siziksu.github.io/blog/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://siziksu.github.io/blog/markdown-syntax-guide/</link>
+      <pubDate>Sat, 01 Jun 2019 13:30:48 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/markdown-syntax-guide/</guid>
+      <description>Titles
+Title 1 This is the text.
+Title 2 This is the text.
+Title 3 This is the text.
+Title 4 This is the text.
+Title 5 This is the text.
+Title 6 This is the text.
+Paragraph
+This is the first paragraph.
+Emphasis
+Emphasis, aka italics, with asterisks or underscores.
+Strong emphasis, aka bold, with asterisks or underscores.
+Combined emphasis with asterisks and underscores.
+Strikethrough uses two tildes. Scratch this.</description>
+    </item>
+    
+  </channel>
+</rss>

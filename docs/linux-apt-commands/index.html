@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siziksu&#39;s Blog &middot; Linux &#39;apt&#39; commands</title>
+    <link rel="shortcut icon" href="https://siziksu.github.io/blog/favicon.ico" />
+    <link rel="canonical" href="https://siziksu.github.io/blog/linux-apt-commands/" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/page.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/pagination.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/single_page.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/single_post.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/list.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/terms.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/taxonomy.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/post_card.css" />
+    
+  </head>
+  <body>
+    <header class="page">
+      <section>
+      <nav class="page">
+        <div>
+          <ul class="nav_menu" role="menu">
+          <li class="" role="menu_item"><a href="/blog/">Home</a></li>
+          <li class="" role="menu_item"><a href="/blog/tags/">Tags</a></li>
+          <li class="" role="menu_item"><a href="/blog/categories/">Categories</a></li>
+          <li class="" role="menu_item"><a href="/blog/page/about/">About me</a></li>
+          
+          </ul>
+        </div>
+        <div>
+          <div class="social_links">
+            <a class="social_link" href="https://github.com/Siziksu" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+            <a class="social_link" href="https://www.linkedin.com/in/esteban-latre" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" /></svg></a>
+          </div>  
+        </div>
+      </nav>
+      </section>  
+    </header>
+    <article class="single_post">
+      <header class="single_post">
+        <figure style="background-image: url(https://siziksu.github.io/blog/images/adorable-animal-canine-1254140.jpg)"></figure>
+      </header>
+      <section class="single_post">
+        <section class="single_post_meta">
+          <time class="meta_date" datetime="2019-06-04">4 June 2019</time>
+          <span class="date_term_divider">|</span><a href="https://siziksu.github.io/blog/tags/linux/" class="term">#linux</a><a href="https://siziksu.github.io/blog/tags/apt/" class="term">#apt</a>
+        </section>
+        <section class="title">
+          <h1>Linux &#39;apt&#39; commands</h1>
+          
+        </section>
+<p>There are two package tools, <code>apt</code> and <code>apt-get</code>. <code>apt</code> is just the rework of <code>apt-get</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Plaintext" data-lang="Plaintext">apt install       apt-get install       Installs a package
+apt remove        apt-get remove        Removes a package
+apt purge         apt-get purge         Removes package with configuration
+apt update        apt-get update        Updates the database of the packages
+apt upgrade       apt-get upgrade       Upgrades all upgradeable packages
+apt autoremove	  apt-get autoremove    Removes unwanted packages
+apt full-upgrade  apt-get dist-upgrade  Upgrades packages with auto-handling of dependencies
+apt search        apt-cache search      Searches for packages
+apt show          apt-cache show        Shows package details
+apt list                                Lists packages with criteria (installed, upgradeable etc)
+apt edit-sources                        Edits sources list</code></pre></div>
+
+<p><strong>Install</strong></p>
+
+<p>If you run <code>apt install</code> on an already installed package, will just look into the database and,
+if a newer version is found, it will upgrade the installed package to the newer one.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt install &lt;package_name&gt;</code></pre></div>
+
+<p>If you don&rsquo;t want to upgrade a package already installed when you use the install, you can use the option <code>–no-upgrade</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt install &lt;package_name&gt; --no-upgrade</code></pre></div>
+
+<p>Also, you can install an specific version of a package.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt install &lt;package_name&gt;<span style="color:#f92672">=</span>&lt;version_number&gt;</code></pre></div>
+
+<p><strong>Upgrade</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt update       <span style="color:#75715e"># Updates the repositories</span>
+$ sudo apt upgrade      <span style="color:#75715e"># If there is any upgradeable repository, upgrades it</span>
+$ sudo apt full-upgrade <span style="color:#75715e"># Upgrades packages with auto-handling of dependencies</span></code></pre></div>
+
+<blockquote>
+<p>If you have package version 1.3 installed, after <code>apt update</code>, the database will be aware that a newer version 1.4 is available.
+When you do an <code>apt upgrade</code> after <code>apt update</code>, it upgrades the installed packages to the newer version.</p>
+</blockquote>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt update <span style="color:#f92672">&amp;&amp;</span> sudo apt upgrade -y <span style="color:#75715e"># This line, performs an automatic (-y) update and upgrade</span></code></pre></div>
+
+<p><strong>Remove</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt remove &lt;package_name&gt; <span style="color:#75715e"># Removes just the package</span></code></pre></div>
+
+<p><strong>Purge</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt purge &lt;package_name&gt; <span style="color:#75715e"># Removes a package and configuration</span></code></pre></div>
+
+<p><strong>Search</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt search &lt;package_name&gt; <span style="color:#75715e"># Searches for packages</span></code></pre></div>
+
+<p><strong>Show</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt show &lt;package_name&gt; <span style="color:#75715e"># Shows package details</span></code></pre></div>
+
+<p><strong>Clean</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ sudo apt autoremove <span style="color:#75715e"># Removes unwanted packages</span></code></pre></div>
+
+      </section>
+      <footer class="single_post">
+          <section class="author">
+            <img class="author-image" src="https://siziksu.github.io/blog/images/profile_picture.png" alt="Author" />
+            <section>
+              <p class="author-name">Esteban Latre</p>
+              <p class="author-description">Android Developer. Kotlin and Linux enthusiast.</p>
+            </section>
+          </section>
+      </footer>
+      <aside class="read_next">
+
+        <section class="post_card" style="background-image: url(https://siziksu.github.io/blog/images/architecture-bridge-buildings-2129814.jpg);" >
+          <div class="random_next">
+            <header>
+              <h1> Siziksu&#39;s Blog</h1>
+            </header>
+            <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg></div>
+            <div class="shuffle_posts">
+              <ul>
+              <li><a href="https://siziksu.github.io/blog/markdown-syntax-guide/">Markdown Syntax Guide</a></li>
+              <li><a href="https://siziksu.github.io/blog/linux-locations/">Linux locations</a></li>
+              <li><a href="https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/">Backing up and restoring the Linux configuration</a></li>
+              <li><a href="https://siziksu.github.io/blog/welcome-post/">Welcome post</a></li></ul>
+            </div>
+            <footer>
+                <a href="https://siziksu.github.io/blog/tags/linux/">See all related posts →</a>
+            </footer>
+          </div>
+        </section>
+
+        
+        <section class="post_card">
+          
+          <a class="post_card_image_link" href="https://siziksu.github.io/blog/linux-locations/">
+            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/architecture-bridge-buildings-1168940.jpg)"></div>
+          </a>
+          
+          <div class="post_card_content">
+            <a class="post_card_content_link" href="https://siziksu.github.io/blog/linux-locations/">
+              <header class="post_card_header">
+                
+                <span class="post_card_tags"> #linux #locations</span>
+                
+                <h1 class="post_card_title">Linux locations</h1>
+              </header>
+              <section class="post_card_excerpt">
+                
+                <p>In this post we will find some usefull Linux locations for important files and folders.</p>
+                
+              </section>
+            </a>
+            <footer class="post_card_meta">
+              <img class="author_profile_image" src="https://siziksu.github.io/blog/images/profile_picture.png" alt="Author" />
+              <span class="post_card_author">Esteban Latre</span>
+            </footer>
+          </div>
+        </section>
+
+        
+        
+        <section class="post_card">
+          
+          <a class="post_card_image_link" href="https://siziksu.github.io/blog/kotlin-const-constants/">
+            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/abstract-architectural-art-2387660.jpg)"></div>
+          </a>
+          
+          <div class="post_card_content">
+            <a class="post_card_content_link" href="https://siziksu.github.io/blog/kotlin-const-constants/">
+              <header class="post_card_header">
+                
+                <span class="post_card_tags"> #kotlin #constants</span>
+                
+                <h1 class="post_card_title">Kotlin &#39;const&#39; constants</h1>
+              </header>
+              <section class="post_card_excerpt">
+                
+                <p>This post will explain the Kotlin &lsquo;const&rsquo; keyword.</p>
+                
+              </section>
+            </a>
+            <footer class="post_card_meta">
+              <img class="author_profile_image" src="https://siziksu.github.io/blog/images/profile_picture.png" alt="Author" />
+              <span class="post_card_author">Esteban Latre</span>
+            </footer>
+          </div>
+        </section>
+
+        
+      </aside>
+    </article>
+    <footer class="page">
+      <section>
+        <p>Esteban Latre © 2019</p>
+        <nav>
+          <a href="/blog/">Latest Posts</a>
+          <a href="https://github.com/Siziksu" target="_blank" rel="noopener">Github</a>
+          <a href="https://www.linkedin.com/in/esteban-latre" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </section> 
+    </footer>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://siziksu.github.io/blog/js/jquery.fitvids.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      $(document).ready(function () {
+        var $postContent = $(".single_post");
+        $postContent.fitVids();
+      });
+    </script>
+  </body>
+</html>

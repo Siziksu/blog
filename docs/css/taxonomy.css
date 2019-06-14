@@ -1,0 +1,23 @@
+header.taxonomy {
+    margin: 0 auto -160px;
+    height: 450px;
+    padding: 90px 30px;
+    background: #090a0b;
+    font-family: Segoe UI, Open Sans, sans-serif;
+    color: #fff;
+    font-weight: normal;
+}
+
+header.taxonomy h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header.taxonomy p {
+    margin: 0;
+    text-align: center;
+}
+
+header.taxonomy section {
+    margin-bottom: 40px;
+}

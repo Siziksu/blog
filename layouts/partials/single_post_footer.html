@@ -1,0 +1,9 @@
+      <footer class="single_post">
+          <section class="author">
+            <img class="author-image" src="{{ (.Params.authorAvatar | default .Site.Params.authorAvatar) | absURL}}" alt="Author" />
+            <section>
+              <p class="author-name">{{.Params.author | default .Site.Params.author}}</p>
+              <p class="author-description">{{.Params.authorDescription | default .Site.Params.authorDescription}}</p>
+            </section>
+          </section>
+      </footer>

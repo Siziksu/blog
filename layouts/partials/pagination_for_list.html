@@ -1,0 +1,4 @@
+        <nav class="list">
+          {{if .Paginator.HasNext}}<a class="older_posts" href="{{ .Paginator.Next.URL }}">&larr; <span class="hide">Previous Posts</span></a>{{else}}<span>&nbsp;</span>{{end}}
+          {{if .Paginator.HasPrev}}<a class="newer_posts" href="{{ .Paginator.Prev.URL }}"><span class="hide">Next Posts</span> &rarr;</a>{{else}}<span>&nbsp;</span>{{end}}
+        </nav>

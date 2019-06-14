@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Siziksu&#39;s Blog</title>
+    <link>https://siziksu.github.io/blog/</link>
+    <description>Recent content on Siziksu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Jun 2019 12:56:50 +0200</lastBuildDate>
+    
+	<atom:link href="https://siziksu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Backing up and restoring the Linux configuration</title>
+      <link>https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/</link>
+      <pubDate>Sun, 09 Jun 2019 12:56:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/</guid>
+      <description>Linux stores the configuration and settings in a dconf database that consists of a single file in binary format. The format is defined as gvdb (GVariant Database file). It is a simple database file format that stores a mapping from strings to GVariant values in a way that is extremely efficient for lookups.
+The GNOME database file for each user is by default ~/.config/dconf/user. To explore/edit the dconf database, you can use the dconf Editor.</description>
+    </item>
+    
+    <item>
+      <title>Kotlin &#39;const&#39; constants</title>
+      <link>https://siziksu.github.io/blog/kotlin-const-constants/</link>
+      <pubDate>Fri, 07 Jun 2019 21:30:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/kotlin-const-constants/</guid>
+      <description>In Kotlin you have two types of constants, const and val.
+const are compile time constants. Meaning, that their value has to be assigned during the compile time, unlike val, where it can be done at runtime. This means, that const can never be assigned to a function or any class constructor. Must be top-level, or member of an object declaration or a companion object.
+Declarations:
+const val foo = &amp;#34;Hello world&amp;#34; Examples:</description>
+    </item>
+    
+    <item>
+      <title>About me</title>
+      <link>https://siziksu.github.io/blog/page/about/</link>
+      <pubDate>Thu, 06 Jun 2019 20:17:00 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/page/about/</guid>
+      <description>Siziksu&amp;rsquo;s apps in Google Play
+ Kotlin and Linux enthusiast Android developer since 2011 Languages: Kotlin, Java Knowledge of:  Object Oriented Programming Design Patterns Software Architecture (MVP, MVVM, Clean Architecture) Clean Code, SOLID Unit Testing  Experience, among others, with:  Web Services (JSON, GSON, RESTful), Retrofit Kotlin Coroutines, RxJava Koin, Dagger 2 Room, Realm Google: Maps, Cloud Messaging, Analytics Agile (Scrum, Jira, Trello, Slack) Git (GitHub, Bitbucket, Gitlab, SourceTree, GitKraken) Continuous Integration (Bitrise) Software distribution (HockeyApp) AB Testing (Optimizely)   </description>
+    </item>
+    
+    <item>
+      <title>Linux &#39;apt&#39; commands</title>
+      <link>https://siziksu.github.io/blog/linux-apt-commands/</link>
+      <pubDate>Tue, 04 Jun 2019 21:30:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/linux-apt-commands/</guid>
+      <description>There are two package tools, apt and apt-get. apt is just the rework of apt-get.
+apt install apt-get install Installs a package apt remove apt-get remove Removes a package apt purge apt-get purge Removes package with configuration apt update apt-get update Updates the database of the packages apt upgrade apt-get upgrade Upgrades all upgradeable packages apt autoremove	apt-get autoremove Removes unwanted packages apt full-upgrade apt-get dist-upgrade Upgrades packages with auto-handling of dependencies apt search apt-cache search Searches for packages apt show apt-cache show Shows package details apt list Lists packages with criteria (installed, upgradeable etc) apt edit-sources Edits sources list Install</description>
+    </item>
+    
+    <item>
+      <title>Linux locations</title>
+      <link>https://siziksu.github.io/blog/linux-locations/</link>
+      <pubDate>Mon, 03 Jun 2019 21:30:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/linux-locations/</guid>
+      <description>One of the things that we always need to know when working with an operating system, is where the things are.
+Repositories
+The repositories are located in the folder /etc/apt/sources.list.d/.
+Path
+The $PATH is set in the file /etc/environment.
+Desktop files
+The *.desktop files are located in the folders ~/.local/share/applications/ and /usr/share/applications/.
+Software installation folder
+If you are installing software manually, for instance a software downloaded as a tar.gz file, should be installed in the folder /opt/.</description>
+    </item>
+    
+    <item>
+      <title>Welcome post</title>
+      <link>https://siziksu.github.io/blog/welcome-post/</link>
+      <pubDate>Sun, 02 Jun 2019 21:30:50 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/welcome-post/</guid>
+      <description>Well, this is my first blog. I always wanted to have one, but you know, never is the right moment to sit down and spend some time writing.
+Finally, I decided to do it. Maybe I&amp;rsquo;m aging and slowing down my pace of life a bit &amp;hellip; anyways, I hope you&amp;rsquo;ll find here some useful posts.
+class SiziksuBlog : HugoBlog { private val posts = ArrayList&amp;lt;Post&amp;gt;() val count: Int get() = posts.</description>
+    </item>
+    
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://siziksu.github.io/blog/markdown-syntax-guide/</link>
+      <pubDate>Sat, 01 Jun 2019 13:30:48 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/markdown-syntax-guide/</guid>
+      <description>Titles
+Title 1 This is the text.
+Title 2 This is the text.
+Title 3 This is the text.
+Title 4 This is the text.
+Title 5 This is the text.
+Title 6 This is the text.
+Paragraph
+This is the first paragraph.
+Emphasis
+Emphasis, aka italics, with asterisks or underscores.
+Strong emphasis, aka bold, with asterisks or underscores.
+Combined emphasis with asterisks and underscores.
+Strikethrough uses two tildes. Scratch this.</description>
+    </item>
+    
+  </channel>
+</rss>

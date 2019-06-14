@@ -1,0 +1,7 @@
+      <section class="single_page">
+        <section class="title">
+          <h1>{{.Title}}</h1>
+          {{if .Params.edit}}<p class="last_edit_date"><span>Last edit date: {{ dateFormat "2 January 2006" .Params.edit | safeHTML }}</span></p>{{end}}
+        </section>
+{{ .Content }}
+      </section>

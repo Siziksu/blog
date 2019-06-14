@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/post/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/backup/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/dconf/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/linux/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/linux/</loc>
+    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/kotlin-const-constants/</loc>
+    <lastmod>2019-06-07T21:30:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/constants/</loc>
+    <lastmod>2019-06-07T21:30:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/kotlin/</loc>
+    <lastmod>2019-06-07T21:30:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/kotlin/</loc>
+    <lastmod>2019-06-07T21:30:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/page/about/</loc>
+    <lastmod>2019-06-06T20:17:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/page/</loc>
+    <lastmod>2019-06-06T20:17:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/linux-apt-commands/</loc>
+    <lastmod>2019-06-04T21:30:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/apt/</loc>
+    <lastmod>2019-06-04T21:30:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/linux-locations/</loc>
+    <lastmod>2019-06-03T21:30:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/locations/</loc>
+    <lastmod>2019-06-03T21:30:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/welcome-post/</loc>
+    <lastmod>2019-06-02T21:30:50+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/welcome/</loc>
+    <lastmod>2019-06-02T21:30:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/welcome/</loc>
+    <lastmod>2019-06-02T21:30:50+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/markdown-syntax-guide/</loc>
+    <lastmod>2019-06-01T13:30:48+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/markdown/</loc>
+    <lastmod>2019-06-01T13:30:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/test/</loc>
+    <lastmod>2019-06-01T13:30:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/test/</loc>
+    <lastmod>2019-06-01T13:30:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

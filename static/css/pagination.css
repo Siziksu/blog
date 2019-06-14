@@ -1,0 +1,14 @@
+nav.single_post, nav.list {
+    margin: 0 auto;
+    width: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Segoe UI, Open Sans, sans-serif;
+    font-size: 1.1rem;
+}
+
+nav.single_post a:hover, nav.list  a:hover {
+    text-decoration: none;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on Siziksu&#39;s Blog</title>
+    <link>https://siziksu.github.io/blog/page/</link>
+    <description>Recent content in Pages on Siziksu&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 06 Jun 2019 20:17:00 +0200</lastBuildDate>
+    
+	<atom:link href="https://siziksu.github.io/blog/page/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About me</title>
+      <link>https://siziksu.github.io/blog/page/about/</link>
+      <pubDate>Thu, 06 Jun 2019 20:17:00 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/page/about/</guid>
+      <description>Siziksu&amp;rsquo;s apps in Google Play
+ Kotlin and Linux enthusiast Android developer since 2011 Languages: Kotlin, Java Knowledge of:  Object Oriented Programming Design Patterns Software Architecture (MVP, MVVM, Clean Architecture) Clean Code, SOLID Unit Testing  Experience, among others, with:  Web Services (JSON, GSON, RESTful), Retrofit Kotlin Coroutines, RxJava Koin, Dagger 2 Room, Realm Google: Maps, Cloud Messaging, Analytics Agile (Scrum, Jira, Trello, Slack) Git (GitHub, Bitbucket, Gitlab, SourceTree, GitKraken) Continuous Integration (Bitrise) Software distribution (HockeyApp) AB Testing (Optimizely)   </description>
+    </item>
+    
+  </channel>
+</rss>

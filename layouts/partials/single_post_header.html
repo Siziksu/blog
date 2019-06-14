@@ -1,0 +1,4 @@
+      <header class="single_post">{{if .Params.image}}
+        <figure style="background-image: url({{ .Params.image | absURL }})"></figure>{{else}}
+        <figure style="background-image: url({{ $.Site.BaseURL }}random/{{ index (seq .Site.Params.randomImages | shuffle) 0 }}.jpg)"></figure>{{end}}
+      </header>

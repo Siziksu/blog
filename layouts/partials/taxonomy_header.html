@@ -1,0 +1,7 @@
+      <header class="taxonomy">
+        <section>
+          <h1>{{ .Title }}</h1>{{$.Scratch.Set "total" (len .Data.Pages)}}
+          <P>{{ if ge ($.Scratch.Get "total") 2 }} A collection of {{ $.Scratch.Get "total" }} posts{{ else }}{{ $.Scratch.Get "total" }} post{{ end }}</P>
+        </section>
+{{ partial "pagination_for_list" . }}
+      </header>
