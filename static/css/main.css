@@ -151,6 +151,7 @@ pre {
 }
 
 code {
+    overflow-y: hidden;
     max-width: 100%;
     padding: 0 0.5em 0;
     font-weight: normal !important;
@@ -165,6 +166,7 @@ pre code {
     background: transparent;
     white-space: pre;
     overflow-x: auto;
+    overflow-y: hidden;
     -webkit-overflow-scrolling: touch;
     display: block;
     scrollbar-color: #666;
