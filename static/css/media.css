@@ -210,6 +210,10 @@
         height: 200px;
         padding: 50px 30px;
     }
+
+    header.taxonomy p {
+        font-size: 0.7em;
+    }
     
     header.taxonomy section {
         margin-bottom: 10px;
@@ -351,7 +355,7 @@
 @media screen and (max-width: 795px) {
  
     article.single_page {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
         line-height: 1em;
     }
 

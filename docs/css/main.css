@@ -141,6 +141,7 @@ pre, code {
 
 pre {
     overflow-x: auto;
+    overflow-y: hidden;
     max-width: 100%;
     margin: 0.5em 0 0.5em;
     border: 1px solid #000;
