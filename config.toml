@@ -21,7 +21,8 @@ disqusShortname = "siziksu-blog"
                 "css/terms.css", 
                 "css/taxonomy.css", 
                 "css/post_card.css", 
-                "css/media.css"]
+                "css/media.css",
+                "css/floating_header.css"]
 
   githubName = "Siziksu"
   linkedinName = "esteban-latre"
@@ -33,6 +34,8 @@ disqusShortname = "siziksu-blog"
 
   randomImages = 4
 
+  logo = ""
+  
 [permalinks]
   post = "/:slug/"
 
