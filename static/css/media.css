@@ -478,6 +478,11 @@
     div.random_next footer {
         margin: 15px 0 3px;
     }
+
+    section.disqus {
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
 
 /* PAGINATION */

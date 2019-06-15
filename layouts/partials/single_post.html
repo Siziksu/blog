@@ -2,6 +2,9 @@
 {{ partial "single_post_header" . }}
 {{ partial "single_post_content" . }}
 {{ partial "single_post_footer" . }}
+      <section class="disqus">
+{{ template "_internal/disqus.html" . }}
+      </section>
       <aside class="read_next">
 {{ partial "random_next_post_card" . }}
         {{with .PrevInSection}}

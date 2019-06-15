@@ -237,3 +237,9 @@ div.random_next footer {
 div.random_next footer a {
     color: #fff
 }
+
+section.disqus {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 60px;
+}
