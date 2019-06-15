@@ -4,7 +4,7 @@ languageCode = "en-us"
 publishDir = "docs"
 paginate = 6
 pygmentsCodeFences=true
-disqusShortname = "siziksu"
+disqusShortname = "siziksu-blog"
 
 [params]
   description = "Blog about Linux, Kotlin, Android, Git and more"
