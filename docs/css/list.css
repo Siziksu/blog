@@ -2,9 +2,9 @@ article.list {
 	flex: 1 0 auto;
     width: 100%;
     margin: 0 auto;
-    font-family: Georgia, serif;
     font-size: 1.2rem;
     line-height: 1.2em;
+    font-weight: normal;
     background: #fff;
 }
 
@@ -15,9 +15,7 @@ header.list {
     background: #090a0b no-repeat 50%;
     background-size: cover;
     padding: 30px 30px 40px;
-    font-family: Segoe UI, Open Sans, sans-serif;
     color: #fff;
-    font-weight: normal;
 }
 
 header.list h1 {
@@ -30,7 +28,6 @@ header.list h1 {
 header.list p {
     margin: 0;
     text-align: center;
-    font-weight: bold;
     font-size: 1.5rem;
     text-shadow: 2px 2px #090a0b;
 }

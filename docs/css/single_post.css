@@ -2,16 +2,15 @@ article.single_post {
 	flex: 1 0 auto;
     width: 100%;
     margin: 0 auto;
-    font-family: Georgia, serif;
     font-size: 1.2rem;
     line-height: 1.2em;
+    font-weight: normal;
     background: #fff;
 }
 
 header.single_post {
     width: 100%;
     margin: 0 auto;
-    font-family: Segoe UI, Open Sans, sans-serif;
     background-size: cover;
 }
 
@@ -38,11 +37,10 @@ section.single_post_meta {
     width: 100%;
     margin: 0 auto;
     color: #738a94;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
     text-align: center;
     color: #3eb0ef;
-    font-family: Segoe UI, Open Sans, sans-serif;
 }
 
 section.single_post_meta span.date_term_divider {
@@ -61,7 +59,8 @@ section.single_post section.title p.last_edit_date {
 }
 
 section.single_post section.title p.last_edit_date span {
-    padding: 5px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
     color: #f3f3f3;
     background: #646464;
     opacity: 0.65;
@@ -106,7 +105,6 @@ section.author {
     align-items: center;
     justify-content: initial;
     margin-top: 0;
-    font-family: Segoe UI, Open Sans, sans-serif;
 }
 
 section.author img.author-image {
@@ -162,7 +160,7 @@ div.random_next h1 {
     color: #fff;
     text-align: center;
     font-size: 1.2rem;
-    line-height: 1em;
+    line-height: 1.2em;
     font-weight: normal;
     letter-spacing: 1px;
     opacity: .8
@@ -217,7 +215,6 @@ div.shuffle_posts li a {
     padding: 15px 0;
     border-bottom: 1px solid hsla(0, 0%, 100%, .3);
     color: #fff;
-    font-weight: normal;
     vertical-align: top;
     opacity: .8;
     transition: opacity .3s ease;

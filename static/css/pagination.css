@@ -5,8 +5,8 @@ nav.single_post, nav.list {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: Segoe UI, Open Sans, sans-serif;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
+    line-height: 1.5em;
 }
 
 nav.single_post a:hover, nav.list  a:hover {

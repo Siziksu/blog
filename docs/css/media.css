@@ -1,4 +1,4 @@
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
     
     body {
         font-size: 1rem;
@@ -15,7 +15,7 @@
     }
     
     img {
-        max-width: 100%
+        max-width: 100%;
     }
     
     img[src$='#right'] {
@@ -25,7 +25,7 @@
     ol, ul {
         margin: 1em 0 1em;
         padding-left: 2em;
-        padding-right: 0em
+        padding-right: 0em;
     }
     
     ol ol,
@@ -136,7 +136,7 @@
 }
 
 /* PAGE */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
     
     header.page {
         padding: 10px 20px;
@@ -161,10 +161,10 @@
 }
 
 /* NAV */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
     
     nav.page ul.nav_menu {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
     }
     
     nav.page ul.nav_menu li {
@@ -185,7 +185,7 @@
 }
 
 /* TERMS */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
 
     article.terms {
         font-size: 0.75rem;
@@ -203,7 +203,7 @@
 }
 
 /* TAXONOMY */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
 
     header.taxonomy {
         margin: 0 auto -60px;
@@ -217,7 +217,7 @@
 }
 
 /* LIST */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
 
     article.list {
         font-size: 1.2rem;
@@ -232,12 +232,12 @@
     
     header.list h1 {
         margin: 30px 0 0;
-        font-size: 2rem;
+        font-size: 1.6rem;
         text-shadow: 2px 2px #090a0b;
     }
     
     header.list p {
-        font-size: 1rem;
+        font-size: 0.8rem;
         text-shadow: 2px 2px #090a0b;
     }
     
@@ -253,7 +253,7 @@
 }
 
 /* POST CARD */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
 
     section.post_card {
         margin: 0 20px 15px;
@@ -277,17 +277,17 @@
 
     section.post_card .post_card_tags {
         margin-bottom: 5px;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         line-height: 1em;
     }
 
     section.post_card .post_card_title {
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 1.2em;
     }
 
     section.post_card .post_card_excerpt {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
     }
 
     section.post_card .post_card_meta {
@@ -295,18 +295,18 @@
     }
 
     section.post_card .author_profile_image {
-        margin-right: 5px;
+        margin-right: 10px;
         width: 25px;
         height: 25px;
     }
 
     section.post_card .post_card_author {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 }
 
 /* POST CARD */
-@media (min-width: 795px) {
+@media screen and (min-width: 795px) {
 
     section.list section.post_card:nth-child(6n+1) {
         -ms-flex: 1 1 100%;
@@ -348,10 +348,10 @@
 }
 
 /* SINGLE PAGE */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
  
     article.single_page {
-        font-size: 0.75rem;
+        font-size: 0.6rem;
         line-height: 1em;
     }
 
@@ -375,10 +375,10 @@
 }
 
 /* SINGLE POST */
-@media (max-width: 795px) {
+@media screen and (max-width: 795px) {
 
     article.single_post {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         line-height: 1em;
     }
     
@@ -392,7 +392,7 @@
     }
     
     section.single_post_meta {
-        font-size: 0.65rem;
+        font-size: 0.55rem;
     }
     
     section.single_post_meta span.date_term_divider {
@@ -404,7 +404,8 @@
     }
     
     section.single_post section.title p.last_edit_date span {
-        padding: 2px;
+        font-size: 0.7rem;
+        padding: 2px 5px;
     }
     
     section.single_post section.title {
@@ -449,7 +450,7 @@
     
     div.random_next h1 {
         font-size: 1.2rem;
-        line-height: 1em;
+        line-height: 1.2em;
         letter-spacing: 1px;
     }
     
@@ -473,8 +474,13 @@
     div.random_next footer {
         margin: 15px 0 3px;
     }
+}
+
+/* PAGINATION */
+@media screen and (max-width: 795px) {
     
     nav.single_post, nav.list {
-        font-size: 0.75rem;
+        font-size: 0.65rem;
+        line-height: 1.5em;
     }
 }

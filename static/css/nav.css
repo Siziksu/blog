@@ -5,6 +5,9 @@ nav.page {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: 0.9rem;
+    line-height: 1em;
+    font-weight: normal;
 }
 
 nav.page ul.nav_menu {
@@ -13,7 +16,6 @@ nav.page ul.nav_menu {
     display: -ms-flexbox;
     display: flex;
     list-style: none;
-    font-size: 1rem;
 }
 
 nav.page ul.nav_menu li {

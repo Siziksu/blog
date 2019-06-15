@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +29,7 @@
 
 html {
     background: #fff;
-    font-family: Segoe UI, Open Sans, sans-serif;
+    font-family: 'Montserrat', Segoe UI, Open Sans, sans-serif;
 }
 
 body {
@@ -178,7 +180,6 @@ table {
     border-spacing: 0;
     max-width: 100%;
     margin: 0.5em 0 0.5em;
-    font-family: Segoe UI, Open Sans, sans-serif;
     font-size: 1.1rem;
     white-space: wrap;
     vertical-align: top;
@@ -232,7 +233,6 @@ h5 {
 }
 
 h6 {
-    font-family: Georgia, serif;
     font-weight: normal;
     color: #555;
     background: #eee;
