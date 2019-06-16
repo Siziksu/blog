@@ -1,9 +1,11 @@
 +++
+type = "post"
 title = "Markdown Syntax Guide"
-description = "This post is just for testing purposes for this Hugo theme."
+summary = "This post is just for testing purposes for this Hugo theme."
 date = 2019-06-01T13:30:48+02:00
 categories = ["test"]
 tags = ["test", "markdown"]
+image = "random/4.jpg"
 edit = ""
 draft = false
 +++

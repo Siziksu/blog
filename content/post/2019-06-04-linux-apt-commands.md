@@ -1,7 +1,8 @@
 +++
+type = "post"
 title = "Linux 'apt' commands"
-description = "This post will have a look at the Linux 'apt' and 'apt-get' package tools."
-date = 2019-06-04T21:30:50+02:00
+summary = "This post will have a look at the Linux 'apt' and 'apt-get' package tools."
+date = 2019-06-04T20:03:35+02:00
 categories = ["linux"]
 tags = ["linux","apt"]
 image = "images/adorable-animal-canine-1254140.jpg"

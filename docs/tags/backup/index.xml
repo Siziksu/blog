@@ -17,8 +17,7 @@
       <pubDate>Sun, 09 Jun 2019 12:56:50 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/</guid>
-      <description>Linux stores the configuration and settings in a dconf database that consists of a single file in binary format. The format is defined as gvdb (GVariant Database file). It is a simple database file format that stores a mapping from strings to GVariant values in a way that is extremely efficient for lookups.
-The GNOME database file for each user is by default ~/.config/dconf/user. To explore/edit the dconf database, you can use the dconf Editor.</description>
+      <description>This post will explain how to backup the Linux configuration (dconf keys).</description>
     </item>
     
   </channel>

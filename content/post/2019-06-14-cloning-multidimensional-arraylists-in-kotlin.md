@@ -1,6 +1,7 @@
 +++
+type = "post"
 title = "Cloning Multidimensional ArrayLists in Kotlin"
-description = "This post will explain, with an example, how to clone a complex ArrayList in Kotlin without the need to serialize/deserialize."
+summary = "This post will explain, with an example, how to clone a complex ArrayList in Kotlin without the need to serialize/deserialize."
 date = 2019-06-14T17:56:50+02:00
 categories = ["kotlin"]
 tags = ["kotlin", "arraylist", "clone"]

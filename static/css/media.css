@@ -310,7 +310,7 @@
 }
 
 /* POST CARD */
-@media screen and (min-width: 795px) {
+@media screen and (min-width: 600px) {
 
     section.list section.post_card:nth-child(6n+1) {
         -ms-flex: 1 1 100%;

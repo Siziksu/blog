@@ -1,6 +1,7 @@
 +++
+type = "post"
 title = "Welcome post"
-description = "Introduction to the blog."
+summary = "Introduction to the blog."
 date = 2019-06-02T21:30:50+02:00
 categories = ["welcome"]
 tags = ["welcome"]

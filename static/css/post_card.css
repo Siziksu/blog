@@ -78,13 +78,30 @@ section.post_card .post_card_excerpt {
     letter-spacing: 1px;
 }
 
+section.post_card p.date {
+    margin: 0;
+    text-align: left;
+    opacity: 0.75;
+}
+
+section.post_card p.last_edit_date {
+    margin: 0;
+    text-align: left;
+}
+
+section.post_card p.last_edit_date span {
+    font-size: 0.8rem;
+    color: #f31824;
+    opacity: 0.75;
+}
+
 section.post_card .post_card_meta {
     display: -ms-flexbox;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: initial;
-    padding: 0 25px 25px;
+    padding: 25px 25px 25px;
 }
 
 section.post_card .author_profile_image {

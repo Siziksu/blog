@@ -4,31 +4,54 @@
   
   <url>
     <loc>https://siziksu.github.io/blog/categories/</loc>
-    <lastmod>2019-06-14T17:56:50+02:00</lastmod>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/how-to-create-a-desktop-file-in-linux/</loc>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/post/</loc>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/</loc>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/</loc>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/desktop-file/</loc>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/linux/</loc>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/linux/</loc>
+    <lastmod>2019-06-16T18:58:48+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://siziksu.github.io/blog/cloning-multidimensional-arraylists-in-kotlin/</loc>
     <lastmod>2019-06-14T17:56:50+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/post/</loc>
-    <lastmod>2019-06-14T17:56:50+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/</loc>
-    <lastmod>2019-06-14T17:56:50+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/tags/</loc>
-    <lastmod>2019-06-14T17:56:50+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -73,25 +96,13 @@
   </url>
   
   <url>
-    <loc>https://siziksu.github.io/blog/categories/linux/</loc>
-    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/tags/linux/</loc>
-    <lastmod>2019-06-09T12:56:50+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://siziksu.github.io/blog/kotlin-const-constants/</loc>
-    <lastmod>2019-06-07T21:30:50+02:00</lastmod>
+    <lastmod>2019-06-07T20:15:24+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://siziksu.github.io/blog/tags/constants/</loc>
-    <lastmod>2019-06-07T21:30:50+02:00</lastmod>
+    <lastmod>2019-06-07T20:15:24+02:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -108,23 +119,23 @@
   
   <url>
     <loc>https://siziksu.github.io/blog/linux-apt-commands/</loc>
-    <lastmod>2019-06-04T21:30:50+02:00</lastmod>
+    <lastmod>2019-06-04T20:03:35+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://siziksu.github.io/blog/tags/apt/</loc>
-    <lastmod>2019-06-04T21:30:50+02:00</lastmod>
+    <lastmod>2019-06-04T20:03:35+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://siziksu.github.io/blog/linux-locations/</loc>
-    <lastmod>2019-06-03T21:30:50+02:00</lastmod>
+    <lastmod>2019-06-03T18:30:40+02:00</lastmod>
   </url>
   
   <url>
     <loc>https://siziksu.github.io/blog/tags/locations/</loc>
-    <lastmod>2019-06-03T21:30:50+02:00</lastmod>
+    <lastmod>2019-06-03T18:30:40+02:00</lastmod>
     <priority>0</priority>
   </url>
   

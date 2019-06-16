@@ -1,11 +1,11 @@
       <section class="single_post">
         <section class="single_post_meta">
-          <time class="meta_date" datetime="{{.Date.Format "2006-01-02"}}">{{ .Date.Format "2 January 2006" | safeHTML }}</time>
-          {{if .Params.tags}}<span class="date_term_divider">|</span>{{ range $index, $tag := .Params.tags }}{{if lt $index 4}}<a href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}/" class="term">#{{$tag}}</a>{{end}}{{end}}{{ end }}
+          <time class="meta_date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" | safeHTML }}</time>
+          {{ if .Params.tags }}<span class="date_term_divider">|</span>{{ range $index, $tag := .Params.tags }}{{ if lt $index 4 }}<a href="{{ $.Site.BaseURL }}tags/{{ $tag | urlize }}/" class="term">#{{ $tag }}</a>{{ end }}{{ end }}{{ end }}
         </section>
         <section class="title">
-          <h1>{{.Title}}</h1>
-          {{if .Params.edit}}<p class="last_edit_date"><span>Last edit date: {{ dateFormat "2 January 2006" .Params.edit | safeHTML }}</span></p>{{end}}
+          <h1>{{ .Title }}</h1>
+          {{ if .Params.edit }}<p class="last_edit_date"><span>Last edit date: {{ dateFormat "2 January 2006" .Params.edit | safeHTML }}</span></p>{{ end }}
         </section>
 {{ .Content }}
       </section>

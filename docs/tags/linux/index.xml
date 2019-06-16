@@ -6,10 +6,19 @@
     <description>Recent content in linux on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 09 Jun 2019 12:56:50 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 16 Jun 2019 18:58:48 +0200</lastBuildDate>
     
 	<atom:link href="https://siziksu.github.io/blog/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Create a Desktop File in Linux</title>
+      <link>https://siziksu.github.io/blog/how-to-create-a-desktop-file-in-linux/</link>
+      <pubDate>Sun, 16 Jun 2019 18:58:48 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/how-to-create-a-desktop-file-in-linux/</guid>
+      <description>This post will show you how to create a desktop file in linux.</description>
+    </item>
     
     <item>
       <title>Backing up and restoring the Linux configuration</title>
@@ -17,35 +26,25 @@
       <pubDate>Sun, 09 Jun 2019 12:56:50 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/</guid>
-      <description>Linux stores the configuration and settings in a dconf database that consists of a single file in binary format. The format is defined as gvdb (GVariant Database file). It is a simple database file format that stores a mapping from strings to GVariant values in a way that is extremely efficient for lookups.
-The GNOME database file for each user is by default ~/.config/dconf/user. To explore/edit the dconf database, you can use the dconf Editor.</description>
+      <description>This post will explain how to backup the Linux configuration (dconf keys).</description>
     </item>
     
     <item>
       <title>Linux &#39;apt&#39; commands</title>
       <link>https://siziksu.github.io/blog/linux-apt-commands/</link>
-      <pubDate>Tue, 04 Jun 2019 21:30:50 +0200</pubDate>
+      <pubDate>Tue, 04 Jun 2019 20:03:35 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/linux-apt-commands/</guid>
-      <description>There are two package tools, apt and apt-get. apt is just the rework of apt-get.
-apt install apt-get install Installs a package apt remove apt-get remove Removes a package apt purge apt-get purge Removes package with configuration apt update apt-get update Updates the database of the packages apt upgrade apt-get upgrade Upgrades all upgradeable packages apt autoremove	apt-get autoremove Removes unwanted packages apt full-upgrade apt-get dist-upgrade Upgrades packages with auto-handling of dependencies apt search apt-cache search Searches for packages apt show apt-cache show Shows package details apt list Lists packages with criteria (installed, upgradeable etc) apt edit-sources Edits sources list Install</description>
+      <description>This post will have a look at the Linux &amp;lsquo;apt&amp;rsquo; and &amp;lsquo;apt-get&amp;rsquo; package tools.</description>
     </item>
     
     <item>
       <title>Linux locations</title>
       <link>https://siziksu.github.io/blog/linux-locations/</link>
-      <pubDate>Mon, 03 Jun 2019 21:30:50 +0200</pubDate>
+      <pubDate>Mon, 03 Jun 2019 18:30:40 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/linux-locations/</guid>
-      <description>One of the things that we always need to know when working with an operating system, is where the things are.
-Repositories
-The repositories are located in the folder /etc/apt/sources.list.d/.
-Path
-The $PATH is set in the file /etc/environment.
-Desktop files
-The *.desktop files are located in the folders ~/.local/share/applications/ and /usr/share/applications/.
-Software installation folder
-If you are installing software manually, for instance a software downloaded as a tar.gz file, should be installed in the folder /opt/.</description>
+      <description>In this post we will find some usefull Linux locations for important files and folders.</description>
     </item>
     
   </channel>

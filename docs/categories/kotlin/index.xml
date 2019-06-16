@@ -17,20 +17,16 @@
       <pubDate>Fri, 14 Jun 2019 17:56:50 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/cloning-multidimensional-arraylists-in-kotlin/</guid>
-      <description>This is a very fast and efficient way to clone complex ArrayLists. This way you can avoid the use of serializing/deserizlizing, that will have a hard impact compared with this solution.
-import com.simfy.core.UnitTest import org.junit.Assert.assertEquals import org.junit.Test class ArrayListsCloneTests : UnitTest() { @Test fun `test 1 cloning an array list of array lists`() { val original = &amp;#34;original&amp;#34; val mutated = &amp;#34;mutated&amp;#34; val list = arrayListOf(arrayListOf(original)) val clone = list.map { it.</description>
+      <description>This post will explain, with an example, how to clone a complex ArrayList in Kotlin without the need to serialize/deserialize.</description>
     </item>
     
     <item>
       <title>Kotlin &#39;const&#39; constants</title>
       <link>https://siziksu.github.io/blog/kotlin-const-constants/</link>
-      <pubDate>Fri, 07 Jun 2019 21:30:50 +0200</pubDate>
+      <pubDate>Fri, 07 Jun 2019 20:15:24 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/kotlin-const-constants/</guid>
-      <description>In Kotlin you have two types of constants, const and val.
-const are compile time constants. Meaning, that their value has to be assigned during the compile time, unlike val, where it can be done at runtime. This means, that const can never be assigned to a function or any class constructor. Must be top-level, or member of an object declaration or a companion object.
-Declarations:
-const val foo = &amp;#34;Hello world&amp;#34; Examples:</description>
+      <description>This post will explain the Kotlin &amp;lsquo;const&amp;rsquo; keyword.</description>
     </item>
     
   </channel>

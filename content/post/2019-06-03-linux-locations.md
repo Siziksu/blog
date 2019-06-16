@@ -1,7 +1,8 @@
 +++
+type = "post"
 title = "Linux locations"
-description = "In this post we will find some usefull Linux locations for important files and folders."
-date = 2019-06-03T21:30:50+02:00
+summary = "In this post we will find some usefull Linux locations for important files and folders."
+date = 2019-06-03T18:30:40+02:00
 categories = ["linux"]
 tags = ["linux","locations"]
 image = "images/architecture-bridge-buildings-1168940.jpg"

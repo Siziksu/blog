@@ -1,11 +1,12 @@
 +++
+type = "post"
 title = "Backing up and restoring the Linux configuration"
-description = "This post will explain how to backup the Linux configuration (dconf keys)."
+summary = "This post will explain how to backup the Linux configuration (dconf keys)."
 date = 2019-06-09T12:56:50+02:00
 categories = ["linux"]
 tags = ["linux", "dconf", "backup"]
 image = "images/architecture-building-contemporary-258846.jpg"
-edit = 2019-06-14T02:29:48+02:00
+edit = 2019-06-16T13:08:48+02:00
 draft = false
 +++
 Linux stores the configuration and settings in a `dconf` database that consists of a single file in binary format. The format is defined as `gvdb` (GVariant Database file). It is a simple database file format that stores a mapping from strings to GVariant values in a way that is extremely efficient for lookups.
@@ -31,3 +32,16 @@ This will create the file `org_cinnamon.dconf` in the folder where you are runni
 `$ dconf reset -f /org/cinnamon/`
 
 > Note, cinnamon may freeze or crash doing this.
+
+**Usefull keys to backup:**
+
+{{< highlight Bash >}}
+# Terminal configuration
+$ dconf dump /org/gnome/terminal/legacy/ > org_gnome_terminal_legacy.dconf
+
+# System Keybindings configuration
+$ dconf dump /org/cinnamon/desktop/keybindings/ > org_cinnamon_desktop_keybindings.dconf
+
+# Nemo configuration
+$ dconf dump /org/nemo/ > org_nemo.dconf
+{{< / highlight >}}

@@ -17,8 +17,7 @@
       <pubDate>Fri, 14 Jun 2019 17:56:50 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/cloning-multidimensional-arraylists-in-kotlin/</guid>
-      <description>This is a very fast and efficient way to clone complex ArrayLists. This way you can avoid the use of serializing/deserizlizing, that will have a hard impact compared with this solution.
-import com.simfy.core.UnitTest import org.junit.Assert.assertEquals import org.junit.Test class ArrayListsCloneTests : UnitTest() { @Test fun `test 1 cloning an array list of array lists`() { val original = &amp;#34;original&amp;#34; val mutated = &amp;#34;mutated&amp;#34; val list = arrayListOf(arrayListOf(original)) val clone = list.map { it.</description>
+      <description>This post will explain, with an example, how to clone a complex ArrayList in Kotlin without the need to serialize/deserialize.</description>
     </item>
     
   </channel>

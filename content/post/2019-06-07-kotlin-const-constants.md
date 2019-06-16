@@ -1,7 +1,8 @@
 +++
+type = "post"
 title = "Kotlin 'const' constants"
-description = "This post will explain the Kotlin 'const' keyword."
-date = 2019-06-07T21:30:50+02:00
+summary = "This post will explain the Kotlin 'const' keyword."
+date = 2019-06-07T20:15:24+02:00
 categories = ["kotlin"]
 tags = ["kotlin", "constants"]
 image = "images/abstract-architectural-art-2387660.jpg"

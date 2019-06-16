@@ -9,6 +9,7 @@ disqusShortname = "siziksu-blog"
 [params]
   description = "Blog about Linux, Kotlin, Android, Git and more"
   copyright = "© 2019"
+  showSubscribe = true
 
   cover = "images/architecture-bridge-buildings-2129814.jpg"
   customCSS = ["css/main.css", 

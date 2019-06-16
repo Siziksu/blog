@@ -17,9 +17,7 @@
       <pubDate>Sun, 02 Jun 2019 21:30:50 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/welcome-post/</guid>
-      <description>Well, this is my first blog. I always wanted to have one, but you know, never is the right moment to sit down and spend some time writing.
-Finally, I decided to do it. Maybe I&amp;rsquo;m aging and slowing down my pace of life a bit &amp;hellip; anyways, I hope you&amp;rsquo;ll find here some useful posts.
-class SiziksuBlog : HugoBlog { private val posts = ArrayList&amp;lt;Post&amp;gt;() val count: Int get() = posts.</description>
+      <description>Introduction to the blog.</description>
     </item>
     
   </channel>
