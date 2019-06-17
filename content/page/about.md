@@ -1,7 +1,6 @@
 +++
 type = "page"
 title = "About me"
-description = "Here I will tell something about myself."
 summary = "Here I will tell something about myself."
 date = "2019-06-06T20:17:00+02:00"
 image = "images/blur-blurry-coffee-273222.jpg"

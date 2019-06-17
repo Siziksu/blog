@@ -1,11 +1,11 @@
 +++
 type = ""
 title = "{{ replace .Name "-" " " | title }}"
-description = ""
+summary = ""
 date = {{ .Date }}
 categories = []
 tags = []
 image = ""
 edit = ""
-draft = false
+draft = true
 +++
