@@ -4,31 +4,60 @@
   
   <url>
     <loc>https://siziksu.github.io/blog/categories/</loc>
-    <lastmod>2019-06-17T19:52:46+02:00</lastmod>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/how-to-rebase-in-git/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/post/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/git/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/git/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/rebase/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/rerere/</loc>
+    <lastmod>2019-06-18T12:51:07+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://siziksu.github.io/blog/how-to-install-in-linux-a-program-in-tar.gz-format/</loc>
     <lastmod>2019-06-17T19:52:46+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/post/</loc>
-    <lastmod>2019-06-17T19:52:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/</loc>
-    <lastmod>2019-06-17T19:52:46+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/tags/</loc>
-    <lastmod>2019-06-17T19:52:46+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
