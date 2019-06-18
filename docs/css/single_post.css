@@ -2,7 +2,7 @@ article.single_post {
 	flex: 1 0 auto;
     width: 100%;
     margin: 0 auto;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.2em;
     font-weight: normal;
     background: #fff;
@@ -117,14 +117,13 @@ section.author img.author-image {
 
 section.author p.author-name {
     margin: 0;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    font-size: 1rem;
     color: #333;
 }
 
 section.author p.author-description {
     margin: 0;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #738a94;
 }
 
