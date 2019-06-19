@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Siziksu&#39;s Blog &middot; Linux locations</title>
+    <title>Siziksu&#39;s Blog &middot; Kotlin also, apply, let, run and with</title>
     <link rel="shortcut icon" href="https://siziksu.github.io/blog/favicon.ico" />
-    <link rel="canonical" href="https://siziksu.github.io/blog/linux-locations/" />
+    <link rel="canonical" href="https://siziksu.github.io/blog/kotlin-also-apply-let-run-and-with/" />
     <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/main.css" />
     <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/nav.css" />
     <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/page.css" />
@@ -47,34 +47,164 @@
     </header>
     <article class="single_post">
       <header class="single_post">
-        <figure style="background-image: url(https://siziksu.github.io/blog/images/architecture-bridge-buildings-1168940.jpg)"></figure>
+        <figure style="background-image: url(https://siziksu.github.io/blog/images/architectural-design-architecture-buildings-830891.jpg)"></figure>
       </header>
       <section class="single_post">
         <section class="single_post_meta">
-          <time class="meta_date" datetime="2019-06-03">3 June 2019</time>
-          <span class="date_term_divider">|</span><a href="https://siziksu.github.io/blog/tags/linux/" class="term">#linux</a><a href="https://siziksu.github.io/blog/tags/locations/" class="term">#locations</a>
+          <time class="meta_date" datetime="2019-06-19">19 June 2019</time>
+          <span class="date_term_divider">|</span><a href="https://siziksu.github.io/blog/tags/also/" class="term">#also</a><a href="https://siziksu.github.io/blog/tags/apply/" class="term">#apply</a><a href="https://siziksu.github.io/blog/tags/let/" class="term">#let</a><a href="https://siziksu.github.io/blog/tags/run/" class="term">#run</a>
         </section>
         <section class="title">
-          <h1>Linux locations</h1>
+          <h1>Kotlin also, apply, let, run and with</h1>
           
         </section>
-<p>One of the things that we always need to know when working with an operating system, is where the things are.</p>
 
-<p><strong>Repositories</strong></p>
 
-<p>The repositories are located in the folder <code>/etc/apt/sources.list.d/</code>.</p>
+<blockquote>
+<p><strong>NOTE</strong>: For this post, we will be using the following object</p>
+</blockquote>
 
-<p><strong>Path</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Kotlin" data-lang="Kotlin"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>(<span style="color:#66d9ef">val</span> id: Int, <span style="color:#66d9ef">var</span> name: String = <span style="color:#e6db74">&#34;Unknown&#34;</span>, <span style="color:#66d9ef">var</span> age: Int = <span style="color:#ae81ff">0</span>) : Comparable&lt;Person&gt; {
 
-<p>The <code>$PATH</code> is set in the file <code>/etc/environment</code>.</p>
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">compareTo</span>(other: Person): Int {
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.name &gt; other.name) <span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#66d9ef">this</span>.name &lt; other.name) -<span style="color:#ae81ff">1</span> <span style="color:#66d9ef">else</span> <span style="color:#ae81ff">0</span>
+    }
 
-<p><strong>Desktop files</strong></p>
+    <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">toString</span>(): String = <span style="color:#e6db74">&#34;$id. $name $age&#34;</span>
+}</code></pre></div>
 
-<p>The <code>*.desktop</code> files are located in the folders <code>~/.local/share/applications/</code> and <code>/usr/share/applications/</code>.</p>
+<p><br /></p>
 
-<p><strong>Software installation folder</strong></p>
+<h2 id="what-they-are">What they are</h2>
 
-<p>If you are installing software manually, for instance a software downloaded as a <code>tar.gz</code> file, should be installed in the folder <code>/opt/</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>What is it</th>
+<th>Context</th>
+<th>Return value</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><strong>also</strong></td>
+<td>Extension</td>
+<td><strong>it</strong></td>
+<td>Context object</td>
+</tr>
+
+<tr>
+<td><strong>apply</strong></td>
+<td>Extension</td>
+<td><strong>this</strong></td>
+<td>Context object</td>
+</tr>
+
+<tr>
+<td><strong>let</strong></td>
+<td>Extension</td>
+<td><strong>it</strong></td>
+<td>The lambda result</td>
+</tr>
+
+<tr>
+<td><strong>run</strong></td>
+<td>Extension</td>
+<td><strong>this</strong></td>
+<td>The lambda result</td>
+</tr>
+
+<tr>
+<td><strong>with</strong></td>
+<td>Function</td>
+<td><strong>this</strong></td>
+<td>The lambda result</td>
+</tr>
+
+<tr>
+<td><strong>run</strong></td>
+<td>Function</td>
+<td><strong>-</strong></td>
+<td>Block result</td>
+</tr>
+</tbody>
+</table>
+
+<p><br /></p>
+
+<h2 id="also-and-apply">Also and Apply</h2>
+
+<p>The extension functions <code>also</code> and <code>apply</code> <strong>return</strong> the <code>context object</code>, meaning that can be used to chain steps over the same object, and also, be the return for functions returning the context object.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Kotlin" data-lang="Kotlin"><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">val</span> list = getList()
+    list.sort()
+    list.forEach { println(it) }
+    <span style="color:#75715e">// 2. Markus 33
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 3. Ron 19
+</span><span style="color:#75715e"></span>    <span style="color:#75715e">// 1. Rowan 31
+</span><span style="color:#75715e"></span>}
+
+<span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getList</span>(): ArrayList&lt;Person&gt; = ArrayList&lt;Person&gt;().also {
+    println(<span style="color:#e6db74">&#34;The list has ${it.size} items&#34;</span>) <span style="color:#75715e">// The list has 0 items
+</span><span style="color:#75715e"></span>}.apply {
+    add(Person(<span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;Rowan&#34;</span>, <span style="color:#ae81ff">31</span>))
+    add(Person(<span style="color:#ae81ff">2</span>, <span style="color:#e6db74">&#34;Markus&#34;</span>, <span style="color:#ae81ff">33</span>))
+    add(Person(<span style="color:#ae81ff">3</span>, <span style="color:#e6db74">&#34;Ron&#34;</span>, <span style="color:#ae81ff">19</span>))
+}.also {
+    println(<span style="color:#e6db74">&#34;The list has ${it.size} items&#34;</span>) <span style="color:#75715e">// The list has 3 items
+</span><span style="color:#75715e"></span>}</code></pre></div>
+
+<p><br /></p>
+
+<h2 id="let-run-and-with">Let, Run and With</h2>
+
+<p>The functions <code>let</code>, <code>run</code> and <code>with</code> <strong>return</strong> the <code>lambda result</code>, meaning that you can return nothing or whatever you need.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Kotlin" data-lang="Kotlin"><span style="color:#66d9ef">val</span> str: String? = <span style="color:#e6db74">&#34;Three&#34;</span>
+str<span style="color:#f92672">?.</span>run {
+    println(<span style="color:#e6db74">&#34;The length of the received string is: $length&#34;</span>)
+    length * <span style="color:#ae81ff">2</span>
+}<span style="color:#f92672">?.</span>let {
+    println(<span style="color:#e6db74">&#34;The number received is $it&#34;</span>)
+} <span style="color:#f92672">?:</span> println(<span style="color:#e6db74">&#34;The string is null&#34;</span>)
+<span style="color:#75715e">// The length of the received string is: 5
+</span><span style="color:#75715e">// The number received is 10</span></code></pre></div>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Kotlin" data-lang="Kotlin"><span style="color:#66d9ef">val</span> person = Person(<span style="color:#ae81ff">1</span>)
+with(person) {
+    name = <span style="color:#e6db74">&#34;Rowan&#34;</span>
+    age = <span style="color:#ae81ff">31</span>
+    age
+}.also { println(<span style="color:#e6db74">&#34;The age of this person is $it&#34;</span>) } <span style="color:#75715e">// The age of this person is 31
+</span><span style="color:#75715e"></span>println(person) <span style="color:#75715e">// 1. Rowan 31</span></code></pre></div>
+
+<p>You can use nullability in <code>with</code> using <code>let</code>.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Kotlin" data-lang="Kotlin"><span style="color:#66d9ef">val</span> person: Person? = <span style="color:#66d9ef">null</span>
+with(person) {
+    <span style="color:#66d9ef">this</span><span style="color:#f92672">?.</span>let {
+        name = <span style="color:#e6db74">&#34;Rowan&#34;</span>
+        age = <span style="color:#ae81ff">31</span>        
+        println(person)
+    } <span style="color:#f92672">?:</span> println(<span style="color:#e6db74">&#34;The object person is null&#34;</span>)
+}
+<span style="color:#75715e">// The object person is null</span></code></pre></div>
+
+<h2 id="run">Run</h2>
+
+<p>The function <code>run</code> can be also used as a non-extension function. This lets you execute a block of code where an expression is required. In this blocks you can return nothing or whatever you need.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Kotlin" data-lang="Kotlin"><span style="color:#66d9ef">val</span> hexNumberRegexPattern = run {
+    <span style="color:#66d9ef">val</span> digits = <span style="color:#e6db74">&#34;0-9&#34;</span>
+    <span style="color:#66d9ef">val</span> hexDigits = <span style="color:#e6db74">&#34;A-Fa-f&#34;</span>
+    <span style="color:#66d9ef">val</span> sign = <span style="color:#e6db74">&#34;+-&#34;</span>
+
+    Regex(<span style="color:#e6db74">&#34;[$sign]?[$digits$hexDigits]+&#34;</span>)
+}
+println(hexNumberRegexPattern) <span style="color:#75715e">// [+-]?[0-9A-Fa-f]+</span></code></pre></div>
 
       </section>
       <footer class="single_post">
@@ -119,13 +249,12 @@
             <div class="shuffle_posts">
               <ul>
               <li><a href="https://siziksu.github.io/blog/welcome-post/">Welcome post</a></li>
-              <li><a href="https://siziksu.github.io/blog/how-to-create-a-desktop-file-in-linux/">How to Create a Desktop File in Linux</a></li>
               <li><a href="https://siziksu.github.io/blog/markdown-syntax-guide/">Markdown Syntax Guide</a></li>
-              
+              <li><a href="https://siziksu.github.io/blog/how-to-install-in-linux-a-program-in-tar.gz-format/">How to install in Linux a program in tar.gz format</a></li>
               <li><a href="https://siziksu.github.io/blog/how-to-rebase-in-git/">How to Rebase in Git</a></li></ul>
             </div>
             <footer>
-                <a href="https://siziksu.github.io/blog/tags/linux/">See all related posts →</a>
+                <a href="https://siziksu.github.io/blog/tags/also/">See all related posts →</a>
             </footer>
           </div>
         </section>
@@ -133,24 +262,24 @@
         
         <section class="post_card">
           
-          <a class="post_card_image_link" href="https://siziksu.github.io/blog/welcome-post/">
-            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/grass-nature-plants-12141.jpg)"></div>
+          <a class="post_card_image_link" href="https://siziksu.github.io/blog/how-to-rebase-in-git/">
+            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/action-active-activity-2422264.jpg)"></div>
           </a>
           
           <div class="post_card_content">
-            <a class="post_card_content_link" href="https://siziksu.github.io/blog/welcome-post/">
+            <a class="post_card_content_link" href="https://siziksu.github.io/blog/how-to-rebase-in-git/">
               <header class="post_card_header">
                 
-                <span class="post_card_tags"> #welcome</span>
+                <span class="post_card_tags"> #git #rebase #rerere</span>
                 
-                <h1 class="post_card_title">Welcome post</h1>
+                <h1 class="post_card_title">How to Rebase in Git</h1>
               </header>
               <section class="post_card_excerpt">
                 
-                <p>Introduction to the blog.</p>
+                <p>This post will explain how to do the process of Rebase in Git.</p>
                 
               </section>
-              <p class="date">Date: 2 June 2019</p>
+              <p class="date">Date: 18 June 2019</p>
               
             </a>
             <footer class="post_card_meta">
@@ -161,36 +290,6 @@
         </section>
 
         
-        
-        <section class="post_card">
-          
-          <a class="post_card_image_link" href="https://siziksu.github.io/blog/linux-apt-commands/">
-            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/adorable-animal-canine-1254140.jpg)"></div>
-          </a>
-          
-          <div class="post_card_content">
-            <a class="post_card_content_link" href="https://siziksu.github.io/blog/linux-apt-commands/">
-              <header class="post_card_header">
-                
-                <span class="post_card_tags"> #linux #apt</span>
-                
-                <h1 class="post_card_title">Linux &#39;apt&#39; commands</h1>
-              </header>
-              <section class="post_card_excerpt">
-                
-                <p>This post will have a look at the Linux &lsquo;apt&rsquo; and &lsquo;apt-get&rsquo; package tools.</p>
-                
-              </section>
-              <p class="date">Date: 4 June 2019</p>
-              
-            </a>
-            <footer class="post_card_meta">
-              <img class="author_profile_image" src="https://siziksu.github.io/blog/images/profile_picture.png" alt="Author" />
-              <span class="post_card_author">Esteban Latre</span>
-            </footer>
-          </div>
-        </section>
-
         
       </aside>
     </article>
@@ -202,15 +301,15 @@
         </a>
       </div>
       <span class="floating-header-divider">&mdash;</span>
-      <div class="floating-header-title">Linux locations</div>
+      <div class="floating-header-title">Kotlin also, apply, let, run and with</div>
       <div class="floating-header-share">
         <div class="floating-header-share-label">Share <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
         </div>
-        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Linux%20locations&amp;url=https%3a%2f%2fsiziksu.github.io%2fblog%2flinux-locations%2f" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Kotlin%20also%2c%20apply%2c%20let%2c%20run%20and%20with&amp;url=https%3a%2f%2fsiziksu.github.io%2fblog%2fkotlin-also-apply-let-run-and-with%2f" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
           </a>
-          <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsiziksu.github.io%2fblog%2flinux-locations%2f" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+          <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsiziksu.github.io%2fblog%2fkotlin-also-apply-let-run-and-with%2f" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
           </a>
       </div>

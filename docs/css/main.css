@@ -183,14 +183,14 @@ table {
     border-spacing: 0;
     max-width: 100%;
     margin: 0.5em 0 0.5em;
-    font-size: 1.1rem;
+    font-size: 1rem;
     white-space: wrap;
     vertical-align: top;
 }
 
 table th {
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #ffffff;
     text-align: center;
     padding: 0.25em 1em;
@@ -200,6 +200,7 @@ table th {
 
 table td {
     padding: 0.35em 1em;
+    font-size: 0.9rem;
     border: 1px solid #fff;
     background-color: #b4d3eb
 }
@@ -216,27 +217,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.2rem;
-}
-
-h2 {
     font-size: 2rem;
 }
 
-h3 {
-    font-size: 1.8rem;
-}
-
-h4 {
+h2 {
     font-size: 1.6rem;
 }
 
+h3 {
+    font-size: 1.3rem;
+}
+
+h4 {
+    font-size: 1.1rem;
+}
+
 h5 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
 }
 
 h6 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 hr {
