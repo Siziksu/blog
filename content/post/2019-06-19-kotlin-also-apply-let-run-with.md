@@ -104,6 +104,8 @@ with(person) {
 // The object person is null
 {{< / highlight >}}
 
+<br />
+
 ## Run
 
 The function `run` can be also used as a non-extension function. This lets you execute a block of code where an expression is required. In this blocks you can return nothing or whatever you need.
@@ -118,3 +120,5 @@ val hexNumberRegexPattern = run {
 }
 println(hexNumberRegexPattern) // [+-]?[0-9A-Fa-f]+
 {{< / highlight >}}
+
+And that's it!

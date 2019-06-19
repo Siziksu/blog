@@ -176,13 +176,11 @@ pre code {
 }
 
 table {
-    display: inline-block;
     overflow-x: auto;
-    width: auto;
     border-collapse: collapse;
     border-spacing: 0;
     max-width: 100%;
-    margin: 0.5em 0 0.5em;
+    margin: 0.5em auto;
     font-size: 1rem;
     white-space: wrap;
     vertical-align: top;
@@ -195,18 +193,24 @@ table th {
     text-align: center;
     padding: 0.25em 1em;
     border: 1px solid #fff;
-    background-color: #2c6896
+    background-color: #2c6896;
 }
 
 table td {
     padding: 0.35em 1em;
     font-size: 0.9rem;
     border: 1px solid #fff;
-    background-color: #b4d3eb
 }
 
 table tr:last-child td:last-child {
     padding-bottom: 0.75em;
+}
+
+table tr:nth-child(odd) td{
+    background-color: #e9f5ff;
+}
+table tr:nth-child(even) td{
+    background-color: #c9e2f5;
 }
 
 h1, h2, h3, h4, h5, h6 {
