@@ -6,10 +6,19 @@
     <description>Recent content in kotlin on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 14 Jun 2019 17:56:50 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 19 Jun 2019 19:50:14 +0200</lastBuildDate>
     
 	<atom:link href="https://siziksu.github.io/blog/tags/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kotlin also, apply, let, run and with</title>
+      <link>https://siziksu.github.io/blog/kotlin-also-apply-let-run-and-with/</link>
+      <pubDate>Wed, 19 Jun 2019 19:50:14 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/kotlin-also-apply-let-run-and-with/</guid>
+      <description>This post will try to show the differences between also, apply, let, run and with in Kotlin.</description>
+    </item>
     
     <item>
       <title>Cloning Multidimensional ArrayLists in Kotlin</title>

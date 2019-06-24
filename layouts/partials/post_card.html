@@ -12,7 +12,7 @@
             <a class="post_card_content_link" href="{{ .Permalink }}">
               <header class="post_card_header">
                 {{if .Params.tags }}
-                <span class="post_card_tags">{{ range $index, $tag := .Params.tags }} #{{ $tag }}{{ end }}</span>
+                <span class="post_card_tags">{{ range $index, $tag := .Params.tags }}{{ if lt $index 5 }} #{{ $tag }}{{ end }}{{ end }}</span>
                 {{ end }}
                 <h1 class="post_card_title">{{ .Title }}</h1>
               </header>

@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>docker</title>
+      <link>https://siziksu.github.io/blog/tags/docker/</link>
+      <pubDate>Mon, 24 Jun 2019 18:25:28 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>express</title>
       <link>https://siziksu.github.io/blog/tags/express/</link>
       <pubDate>Mon, 24 Jun 2019 18:25:28 +0200</pubDate>
@@ -71,6 +80,15 @@
       <pubDate>Wed, 19 Jun 2019 19:50:14 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/tags/apply/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kotlin</title>
+      <link>https://siziksu.github.io/blog/tags/kotlin/</link>
+      <pubDate>Wed, 19 Jun 2019 19:50:14 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/kotlin/</guid>
       <description></description>
     </item>
     
@@ -183,15 +201,6 @@
     </item>
     
     <item>
-      <title>kotlin</title>
-      <link>https://siziksu.github.io/blog/tags/kotlin/</link>
-      <pubDate>Fri, 14 Jun 2019 17:56:50 +0200</pubDate>
-      
-      <guid>https://siziksu.github.io/blog/tags/kotlin/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>backup</title>
       <link>https://siziksu.github.io/blog/tags/backup/</link>
       <pubDate>Sun, 09 Jun 2019 12:56:50 +0200</pubDate>
@@ -251,15 +260,6 @@
       <pubDate>Sat, 01 Jun 2019 13:30:48 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/tags/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>test</title>
-      <link>https://siziksu.github.io/blog/tags/test/</link>
-      <pubDate>Sat, 01 Jun 2019 13:30:48 +0200</pubDate>
-      
-      <guid>https://siziksu.github.io/blog/tags/test/</guid>
       <description></description>
     </item>
     

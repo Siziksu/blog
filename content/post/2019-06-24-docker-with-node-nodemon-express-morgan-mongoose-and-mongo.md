@@ -1,10 +1,10 @@
 +++
 type = "post"
-title = "Docker with Node, Nodemon, Express, Morgan, Mongoose and Mongo"
-summary = "This post will explain how to use docker-compose to create the environment to use node and mongo with docker."
+title = "Docker with Node.js and MongoDB (using Nodemon, Express, Morgan and Mongoose)"
+summary = "This post will explain how to use docker-compose to create the environment to use Node.js and MongoDB with Docker."
 date = 2019-06-24T18:25:28+02:00
 categories = ["docker"]
-tags = ["node", "express", "morgan", "mongoose", "mongo"]
+tags = ["node", "express", "morgan", "mongoose", "mongo", "docker"]
 image = "images/beverage-business-classic-2305765.jpg"
 edit = ""
 draft = false

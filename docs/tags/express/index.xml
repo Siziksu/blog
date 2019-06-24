@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Docker with Node, Nodemon, Express, Morgan, Mongoose and Mongo</title>
-      <link>https://siziksu.github.io/blog/docker-with-node-nodemon-express-morgan-mongoose-and-mongo/</link>
+      <title>Docker with Node.js and MongoDB (using Nodemon, Express, Morgan and Mongoose)</title>
+      <link>https://siziksu.github.io/blog/docker-with-node.js-and-mongodb-using-nodemon-express-morgan-and-mongoose/</link>
       <pubDate>Mon, 24 Jun 2019 18:25:28 +0200</pubDate>
       
-      <guid>https://siziksu.github.io/blog/docker-with-node-nodemon-express-morgan-mongoose-and-mongo/</guid>
-      <description>This post will explain how to use docker-compose to create the environment to use node and mongo with docker.</description>
+      <guid>https://siziksu.github.io/blog/docker-with-node.js-and-mongodb-using-nodemon-express-morgan-and-mongoose/</guid>
+      <description>This post will explain how to use docker-compose to create the environment to use Node.js and MongoDB with Docker.</description>
     </item>
     
   </channel>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>test on Siziksu&#39;s Blog</title>
-    <link>https://siziksu.github.io/blog/tags/test/</link>
-    <description>Recent content in test on Siziksu&#39;s Blog</description>
+    <title>markdown on Siziksu&#39;s Blog</title>
+    <link>https://siziksu.github.io/blog/categories/markdown/</link>
+    <description>Recent content in markdown on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 01 Jun 2019 13:30:48 +0200</lastBuildDate>
     
-	<atom:link href="https://siziksu.github.io/blog/tags/test/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://siziksu.github.io/blog/categories/markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
