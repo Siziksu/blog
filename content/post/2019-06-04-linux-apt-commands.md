@@ -25,6 +25,8 @@ apt list                                Lists packages with criteria (installed,
 apt edit-sources                        Edits sources list
 {{< / highlight >}}
 
+<br />
+
 **Install**
 
 If you run `apt install` on an already installed package, will just look into the database and,
@@ -46,6 +48,8 @@ Also, you can install an specific version of a package.
 $ sudo apt install <package_name>=<version_number>
 {{< / highlight >}}
 
+<br />
+
 **Upgrade**
 
 {{< highlight Bash >}}
@@ -61,11 +65,15 @@ When you do an `apt upgrade` after `apt update`, it upgrades the installed packa
 $ sudo apt update && sudo apt upgrade -y # This line, performs an automatic (-y) update and upgrade
 {{< / highlight >}}
 
+<br />
+
 **Remove**
 
 {{< highlight Bash >}}
 $ sudo apt remove <package_name> # Removes just the package
 {{< / highlight >}}
+
+<br />
 
 **Purge**
 
@@ -73,17 +81,23 @@ $ sudo apt remove <package_name> # Removes just the package
 $ sudo apt purge <package_name> # Removes a package and configuration
 {{< / highlight >}}
 
+<br />
+
 **Search**
 
 {{< highlight Bash >}}
 $ sudo apt search <package_name> # Searches for packages
 {{< / highlight >}}
 
+<br />
+
 **Show**
 
 {{< highlight Bash >}}
 $ sudo apt show <package_name> # Shows package details
 {{< / highlight >}}
+
+<br />
 
 **Clean**
 

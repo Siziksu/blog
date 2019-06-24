@@ -4,31 +4,72 @@
   
   <url>
     <loc>https://siziksu.github.io/blog/categories/</loc>
-    <lastmod>2019-06-19T19:50:14+02:00</lastmod>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/docker-with-node-nodemon-express-morgan-mongoose-and-mongo/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/post/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/categories/docker/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/express/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/mongo/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/mongoose/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/morgan/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://siziksu.github.io/blog/tags/node/</loc>
+    <lastmod>2019-06-24T18:25:28+02:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://siziksu.github.io/blog/kotlin-also-apply-let-run-and-with/</loc>
     <lastmod>2019-06-19T19:50:14+02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/post/</loc>
-    <lastmod>2019-06-19T19:50:14+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/</loc>
-    <lastmod>2019-06-19T19:50:14+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://siziksu.github.io/blog/tags/</loc>
-    <lastmod>2019-06-19T19:50:14+02:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>

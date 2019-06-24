@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siziksu&#39;s Blog &middot; Docker with Node, Nodemon, Express, Morgan, Mongoose and Mongo</title>
+    <link rel="shortcut icon" href="https://siziksu.github.io/blog/favicon.ico" />
+    <link rel="canonical" href="https://siziksu.github.io/blog/docker-with-node-nodemon-express-morgan-mongoose-and-mongo/" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/page.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/pagination.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/single_page.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/single_post.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/list.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/terms.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/taxonomy.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/post_card.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/media.css" />
+    <link rel="stylesheet" type="text/css" href="https://siziksu.github.io/blog/css/floating_header.css" />
+    
+  </head>
+  <body>
+    <header class="page floating_starter">
+      <section>
+      <nav class="page">
+        <div>
+          <ul class="nav_menu" role="menu">
+          <li class="" role="menu_item"><a href="/blog/">Home</a></li>
+          <li class="" role="menu_item"><a href="/blog/tags/">Tags</a></li>
+          <li class="" role="menu_item"><a href="/blog/categories/">Categories</a></li>
+          <li class="" role="menu_item"><a href="/blog/page/about/">About me</a></li>
+          
+          </ul>
+        </div>
+        <div>
+          <div class="social_links">
+            <a class="social_link" href="https://github.com/Siziksu" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+            <a class="social_link" href="https://www.linkedin.com/in/esteban-latre" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" /></svg></a>
+            <a class="social_link" href="" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"/></svg></a>
+          </div>  
+        </div>
+      </nav>
+      </section>  
+    </header>
+    <article class="single_post">
+      <header class="single_post">
+        <figure style="background-image: url(https://siziksu.github.io/blog/images/beverage-business-classic-2305765.jpg)"></figure>
+      </header>
+      <section class="single_post">
+        <section class="single_post_meta">
+          <time class="meta_date" datetime="2019-06-24">24 June 2019</time>
+          <span class="date_term_divider">|</span><a href="https://siziksu.github.io/blog/tags/node/" class="term">#node</a><a href="https://siziksu.github.io/blog/tags/express/" class="term">#express</a><a href="https://siziksu.github.io/blog/tags/morgan/" class="term">#morgan</a><a href="https://siziksu.github.io/blog/tags/mongoose/" class="term">#mongoose</a><a href="https://siziksu.github.io/blog/tags/mongo/" class="term">#mongo</a>
+        </section>
+        <section class="title">
+          <h1>Docker with Node, Nodemon, Express, Morgan, Mongoose and Mongo</h1>
+          
+        </section>
+<blockquote>
+<p><strong>IMPORTANT</strong>: For this tutorial you will need to have installed <code>docker</code>, <code>docker-compose</code>and <code>npm</code>.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p>This tutorial will show you how to build a really flexible dockerized server running <code>node.js</code> and <code>mongodb</code>. Using <code>docker-compose</code> this way, you will be able to edit your server on the fly. You will use two images and you won&rsquo;t need to create a new one thanks to the use of volumes.</p>
+
+<p>Ok, so lets get started.</p>
+
+<p><br /></p>
+
+<p><strong>Folder structure</strong></p>
+
+<p>This will be the folder structure that we will use.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Plaintext" data-lang="Plaintext">mongo-project/
+├── package/
+│   ├── node_modules/
+│   ├── src/
+│   │   ├── database.js
+│   │   └── index.js
+│   └── package.json
+└── docker-compose.yml</code></pre></div>
+
+<blockquote>
+<p>The names of the folders and containers is up to you, except for the files <code>docker-compose.yml</code>, <code>package.json</code> and the folder <code>node_modules</code>.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><strong>First steps to build this structure</strong></p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">$ mkdir mongo-project <span style="color:#75715e"># Create the project folder</span>
+$ cd mongo-project    <span style="color:#75715e"># Go inside the project folder</span>
+$ mkdir package       <span style="color:#75715e"># Create the folder package</span>
+$ cd package          <span style="color:#75715e"># Go inside the package folder</span>
+$ mkdir src           <span style="color:#75715e"># Create the folder src</span>
+$ npm init --yes      <span style="color:#75715e"># Creates the package.json file</span>
+$ npm i express mongoose morgan --save <span style="color:#75715e"># Installs express, mongoose and morgan and adds them to the package.json</span>
+$ npm i nodemon -D    <span style="color:#75715e"># Installs nodemon and adds it to the package.json as a development dependency</span></code></pre></div>
+
+<p><br /></p>
+
+<p><strong>package.json</strong></p>
+
+<p>At this point your <code>package.json</code> file will look like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Json" data-lang="Json">{
+  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;package&#34;</span>,
+  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
+  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+    <span style="color:#f92672">&#34;test&#34;</span>: <span style="color:#e6db74">&#34;echo \&#34;Error: no test specified\&#34; &amp;&amp; exit 1&#34;</span>
+  },
+  <span style="color:#f92672">&#34;keywords&#34;</span>: [],
+  <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;&#34;</span>,
+  <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>,
+  <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+    <span style="color:#f92672">&#34;express&#34;</span>: <span style="color:#e6db74">&#34;^4.17.1&#34;</span>,
+    <span style="color:#f92672">&#34;mongoose&#34;</span>: <span style="color:#e6db74">&#34;^5.6.0&#34;</span>,
+    <span style="color:#f92672">&#34;morgan&#34;</span>: <span style="color:#e6db74">&#34;^1.9.1&#34;</span>
+  },
+  <span style="color:#f92672">&#34;devDependencies&#34;</span>: {
+    <span style="color:#f92672">&#34;nodemon&#34;</span>: <span style="color:#e6db74">&#34;^1.19.1&#34;</span>
+  }
+}</code></pre></div>
+
+<p><br /></p>
+
+<p>Now you can edit the <code>name</code>, <code>description</code> and <code>author</code> values as you wish.</p>
+
+<p>In the <code>scripts</code> section you need to add this <code>start</code> script: <code>&quot;start&quot;: &quot;nodemon src/index.js&quot;</code>. And delete the <code>test</code> script.</p>
+
+<p>Now you will have something like this:</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JSON" data-lang="JSON">{
+  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;node-server&#34;</span>,
+  <span style="color:#f92672">&#34;version&#34;</span>: <span style="color:#e6db74">&#34;1.0.0&#34;</span>,
+  <span style="color:#f92672">&#34;description&#34;</span>: <span style="color:#e6db74">&#34;Node.js server&#34;</span>,
+  <span style="color:#f92672">&#34;main&#34;</span>: <span style="color:#e6db74">&#34;index.js&#34;</span>,
+  <span style="color:#f92672">&#34;scripts&#34;</span>: {
+    <span style="color:#f92672">&#34;start&#34;</span>: <span style="color:#e6db74">&#34;nodemon src/index.js&#34;</span>
+  },
+  <span style="color:#f92672">&#34;keywords&#34;</span>: [],
+  <span style="color:#f92672">&#34;author&#34;</span>: <span style="color:#e6db74">&#34;Siziksu&#34;</span>,
+  <span style="color:#f92672">&#34;license&#34;</span>: <span style="color:#e6db74">&#34;ISC&#34;</span>,
+  <span style="color:#f92672">&#34;dependencies&#34;</span>: {
+    <span style="color:#f92672">&#34;express&#34;</span>: <span style="color:#e6db74">&#34;^4.17.1&#34;</span>,
+    <span style="color:#f92672">&#34;mongoose&#34;</span>: <span style="color:#e6db74">&#34;^5.6.0&#34;</span>,
+    <span style="color:#f92672">&#34;morgan&#34;</span>: <span style="color:#e6db74">&#34;^1.9.1&#34;</span>
+  },
+  <span style="color:#f92672">&#34;devDependencies&#34;</span>: {
+    <span style="color:#f92672">&#34;nodemon&#34;</span>: <span style="color:#e6db74">&#34;^1.19.1&#34;</span>
+  }
+}</code></pre></div>
+
+<p><br /></p>
+
+<p><strong>docker-compose.yml</strong></p>
+
+<p>Now it&rsquo;s time for the <code>docker-compose.yml</code> file. Go to the <code>mongo-project</code> folder and type <code>$ touch docker-compose.yml</code> to create the file. Set the following content.</p>
+
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-YAML" data-lang="YAML">version: <span style="color:#e6db74">&#39;3&#39;</span>
+services:
+  server:
+    image: node:<span style="color:#ae81ff">12.4</span>.<span style="color:#ae81ff">0</span>-alpine
+    container_name: node
+    working_dir: /server
+    volumes:
+    - ./package:/server
+    command: npm run start
+    ports:
+    - <span style="color:#e6db74">&#34;8080:80&#34;</span>
+    depends_on:
+      - mongo
+      
+  mongo:
+    image: mongo:<span style="color:#ae81ff">4.0</span>.<span style="color:#ae81ff">10</span>
+    container_name: mongo
+    ports:
+      - <span style="color:#e6db74">&#39;27017:27017&#39;</span></code></pre></div>
+
+<blockquote>
+<p>Use the versions for the images of your choice, these are just mine.</p>
+</blockquote>
+
+<p><br /></p>
+
+<p><strong>src folder</strong></p>
+
+<p>Go to the <code>src</code> folder and type <code>$ touch index.js</code> and <code>$ touch database.js</code> to create the file. Add the following content for both.</p>
+
+<p><em>database.js</em>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">mongoose</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;mongoose&#39;</span>)
+
+<span style="color:#a6e22e">mongoose</span>.<span style="color:#a6e22e">connect</span>(<span style="color:#e6db74">&#39;mongodb://mongo:27017/siziksu-db&#39;</span>, {
+    <span style="color:#a6e22e">useCreateIndex</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">useNewUrlParser</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+    <span style="color:#a6e22e">useFindAndModify</span><span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+})
+.<span style="color:#a6e22e">then</span>(<span style="color:#a6e22e">db</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#39;Database connected&#39;</span>))
+.<span style="color:#66d9ef">catch</span>(<span style="color:#a6e22e">error</span> =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">error</span>(<span style="color:#a6e22e">error</span>))
+</code></pre></div></p>
+
+<p><em>index.js</em>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-JavaScript" data-lang="JavaScript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;express&#39;</span>)
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>()
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">morgan</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;morgan&#39;</span>)
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">database</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;./database&#39;</span>)
+
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;appName&#39;</span>, <span style="color:#e6db74">&#39;Mongo Server&#39;</span>)
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">set</span>(<span style="color:#e6db74">&#39;port&#39;</span>, <span style="color:#ae81ff">80</span>)
+
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">morgan</span>(<span style="color:#e6db74">&#39;dev&#39;</span>))
+
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">end</span>(<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;appName&#39;</span>)))
+
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;*&#39;</span>, (<span style="color:#a6e22e">req</span>, <span style="color:#a6e22e">res</span>) =&gt; <span style="color:#a6e22e">res</span>.<span style="color:#a6e22e">end</span>(<span style="color:#e6db74">&#39;File not found&#39;</span>))
+
+<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;port&#39;</span>), () =&gt; <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Running on internal port: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#39;port&#39;</span>)<span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>))
+</code></pre></div></p>
+
+<p><br /></p>
+
+<p><strong>Running the server</strong></p>
+
+<p>Go to the <code>mongo-project</code> folder and type <code>$ docker-compose up</code> to run the server.</p>
+
+<p>Now, if you go to your browser and type <code>http://localhost:8080/</code>, the page will say <code>Mongo Server</code>.</p>
+
+<p><br /></p>
+
+<p>And that&rsquo;s it!</p>
+
+      </section>
+      <footer class="single_post">
+          <section class="author">
+            <img class="author-image" src="https://siziksu.github.io/blog/images/profile_picture.png" alt="Author" />
+            <section>
+              <p class="author-name">Esteban Latre</p>
+              <p class="author-description">Android Developer. Kotlin and Linux enthusiast.</p>
+            </section>
+          </section>
+      </footer>
+      <section class="disqus">
+<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "siziksu-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </section>
+      <aside class="read_next">
+
+        <section class="post_card" style="background-image: url(https://siziksu.github.io/blog/images/architecture-bridge-buildings-2129814.jpg);" >
+          <div class="random_next">
+            <header>
+              <h1> Siziksu&#39;s Blog</h1>
+            </header>
+            <div class="divider"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 14.5s2 3 5 3 5.5-2.463 5.5-5.5S21 6.5 18 6.5c-5 0-7 11-12 11C2.962 17.5.5 15.037.5 12S3 6.5 6 6.5s4.5 3.5 4.5 3.5"/></svg></div>
+            <div class="shuffle_posts">
+              <ul>
+              <li><a href="https://siziksu.github.io/blog/kotlin-const-constants/">Kotlin &#39;const&#39; constants</a></li>
+              <li><a href="https://siziksu.github.io/blog/backing-up-and-restoring-the-linux-configuration/">Backing up and restoring the Linux configuration</a></li>
+              <li><a href="https://siziksu.github.io/blog/markdown-syntax-guide/">Markdown Syntax Guide</a></li>
+              <li><a href="https://siziksu.github.io/blog/linux-locations/">Linux locations</a></li></ul>
+            </div>
+            <footer>
+                <a href="https://siziksu.github.io/blog/tags/node/">See all related posts →</a>
+            </footer>
+          </div>
+        </section>
+
+        
+        <section class="post_card">
+          
+          <a class="post_card_image_link" href="https://siziksu.github.io/blog/kotlin-also-apply-let-run-and-with/">
+            <div class="post_card_image" style="background-image: url(https://siziksu.github.io/blog/images/architectural-design-architecture-buildings-830891.jpg)"></div>
+          </a>
+          
+          <div class="post_card_content">
+            <a class="post_card_content_link" href="https://siziksu.github.io/blog/kotlin-also-apply-let-run-and-with/">
+              <header class="post_card_header">
+                
+                <span class="post_card_tags"> #also #apply #let #run #with</span>
+                
+                <h1 class="post_card_title">Kotlin also, apply, let, run and with</h1>
+              </header>
+              <section class="post_card_excerpt">
+                
+                <p>This post will try to show the differences between also, apply, let, run and with in Kotlin.</p>
+                
+              </section>
+              <p class="date">Date: 19 June 2019</p>
+              
+            </a>
+            <footer class="post_card_meta">
+              <img class="author_profile_image" src="https://siziksu.github.io/blog/images/profile_picture.png" alt="Author" />
+              <span class="post_card_author">Esteban Latre</span>
+            </footer>
+          </div>
+        </section>
+
+        
+        
+      </aside>
+    </article>
+    <section class="floating-header">
+      <div class="floating-header-logo">
+        <a href="https://siziksu.github.io/">
+          
+          <span>Siziksu&#39;s Blog</span>
+        </a>
+      </div>
+      <span class="floating-header-divider">&mdash;</span>
+      <div class="floating-header-title">Docker with Node, Nodemon, Express, Morgan, Mongoose and Mongo</div>
+      <div class="floating-header-share">
+        <div class="floating-header-share-label">Share <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/></svg>
+        </div>
+        <a class="floating-header-share-tw" href="https://twitter.com/share?text=Docker%20with%20Node%2c%20Nodemon%2c%20Express%2c%20Morgan%2c%20Mongoose%20and%20Mongo&amp;url=https%3a%2f%2fsiziksu.github.io%2fblog%2fdocker-with-node-nodemon-express-morgan-mongoose-and-mongo%2f" onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"/></svg>
+          </a>
+          <a class="floating-header-share-fb" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fsiziksu.github.io%2fblog%2fdocker-with-node-nodemon-express-morgan-mongoose-and-mongo%2f" onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
+          </a>
+      </div>
+      <progress class="progress" value="0">
+        <div class="progress-container">
+          <span class="progress-bar"></span>
+        </div>
+      </progress>
+    </section>
+    <footer class="page">
+      <section>
+        <p>Esteban Latre © 2019</p>
+        <nav>
+          <a href="/blog/">Latest Posts</a>
+          <a href="https://github.com/Siziksu" target="_blank" rel="noopener">Github</a>
+          <a href="https://www.linkedin.com/in/esteban-latre" target="_blank" rel="noopener">LinkedIn</a>
+        </nav>
+      </section> 
+    </footer>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://siziksu.github.io/blog/js/jquery.fitvids.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      $(document).ready(function () {
+        var $postContent = $(".single_post");
+        $postContent.fitVids();
+
+        var progressBar = document.querySelector('progress');
+        var header = document.querySelector('.floating-header');
+        var title = document.querySelector('.floating_starter');
+
+        var lastScrollY = window.scrollY;
+        var lastWindowHeight = window.innerHeight;
+        var lastDocumentHeight = $(document).height();
+        var ticking = false;
+
+        function onScroll() {
+            lastScrollY = window.scrollY;
+            requestTick();
+        }
+
+        function onResize() {
+            lastWindowHeight = window.innerHeight;
+            lastDocumentHeight = $(document).height();
+            requestTick();
+        }
+
+        function requestTick() {
+            if (!ticking) {
+                requestAnimationFrame(update);
+            }
+            ticking = true;
+        }
+
+        function update() {
+            var trigger = title.getBoundingClientRect().top + window.scrollY;
+            var triggerOffset = title.offsetHeight + 35;
+            var progressMax = lastDocumentHeight - lastWindowHeight;
+
+            
+            if (lastScrollY >= trigger + triggerOffset) {
+                header.classList.add('floating-active');
+            } else {
+                header.classList.remove('floating-active');
+            }
+
+            progressBar.setAttribute('max', progressMax);
+            progressBar.setAttribute('value', lastScrollY);
+
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', onScroll, {passive: true});
+        window.addEventListener('resize', onResize, false);
+
+        update();
+      });
+    </script>
+  </body>
+</html>

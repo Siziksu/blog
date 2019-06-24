@@ -30,4 +30,6 @@ $ git rebase develop       # Rebase from develop to your branch
 
 4. After Rebase has finished, the most important part is to run this command: `$ git push -f`. This will push force your branch.
 
+<br />
+
 And that's it!

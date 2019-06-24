@@ -121,4 +121,6 @@ val hexNumberRegexPattern = run {
 println(hexNumberRegexPattern) // [+-]?[0-9A-Fa-f]+
 {{< / highlight >}}
 
+<br />
+
 And that's it!

@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jun 2019 19:50:14 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2019 18:25:28 +0200</lastBuildDate>
     
 	<atom:link href="https://siziksu.github.io/blog/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker with Node, Nodemon, Express, Morgan, Mongoose and Mongo</title>
+      <link>https://siziksu.github.io/blog/docker-with-node-nodemon-express-morgan-mongoose-and-mongo/</link>
+      <pubDate>Mon, 24 Jun 2019 18:25:28 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/docker-with-node-nodemon-express-morgan-mongoose-and-mongo/</guid>
+      <description>This post will explain how to use docker-compose to create the environment to use node and mongo with docker.</description>
+    </item>
     
     <item>
       <title>Kotlin also, apply, let, run and with</title>

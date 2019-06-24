@@ -23,6 +23,10 @@ The directory `/opt` is reserved for all the software and add-on packages that a
 
 The last step will be to create a `desktop file` to be able to run the program. For this step, I already did another post on how to do it:
 
+<br />
+
 [How to Create a Desktop File in Linux](../how-to-create-a-desktop-file-in-linux/)
+
+<br />
 
 And that's it!
