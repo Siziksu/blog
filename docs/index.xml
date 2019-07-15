@@ -6,10 +6,19 @@
     <description>Recent content on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jun 2019 18:25:28 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 20:25:18 +0200</lastBuildDate>
     
 	<atom:link href="https://siziksu.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kotlin Broadcast Channel in Android</title>
+      <link>https://siziksu.github.io/blog/kotlin-broadcast-channel-in-android/</link>
+      <pubDate>Sun, 14 Jul 2019 20:25:18 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/kotlin-broadcast-channel-in-android/</guid>
+      <description>This post will explain how to use Kotlin Broadcast Channels in Android.</description>
+    </item>
     
     <item>
       <title>Docker with Node.js and MongoDB (using Nodemon, Express, Morgan and Mongoose)</title>

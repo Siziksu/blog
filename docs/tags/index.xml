@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Jun 2019 18:25:28 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 20:25:18 +0200</lastBuildDate>
     
 	<atom:link href="https://siziksu.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>android</title>
+      <link>https://siziksu.github.io/blog/tags/android/</link>
+      <pubDate>Sun, 14 Jul 2019 20:25:18 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/android/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>broadcast</title>
+      <link>https://siziksu.github.io/blog/tags/broadcast/</link>
+      <pubDate>Sun, 14 Jul 2019 20:25:18 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/broadcast/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>channel</title>
+      <link>https://siziksu.github.io/blog/tags/channel/</link>
+      <pubDate>Sun, 14 Jul 2019 20:25:18 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/channel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kotlin</title>
+      <link>https://siziksu.github.io/blog/tags/kotlin/</link>
+      <pubDate>Sun, 14 Jul 2019 20:25:18 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/tags/kotlin/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>docker</title>
@@ -80,15 +116,6 @@
       <pubDate>Wed, 19 Jun 2019 19:50:14 +0200</pubDate>
       
       <guid>https://siziksu.github.io/blog/tags/apply/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kotlin</title>
-      <link>https://siziksu.github.io/blog/tags/kotlin/</link>
-      <pubDate>Wed, 19 Jun 2019 19:50:14 +0200</pubDate>
-      
-      <guid>https://siziksu.github.io/blog/tags/kotlin/</guid>
       <description></description>
     </item>
     

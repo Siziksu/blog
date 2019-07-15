@@ -6,10 +6,19 @@
     <description>Recent content in kotlin on Siziksu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jun 2019 19:50:14 +0200</lastBuildDate>
+    <lastBuildDate>Sun, 14 Jul 2019 20:25:18 +0200</lastBuildDate>
     
 	<atom:link href="https://siziksu.github.io/blog/categories/kotlin/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kotlin Broadcast Channel in Android</title>
+      <link>https://siziksu.github.io/blog/kotlin-broadcast-channel-in-android/</link>
+      <pubDate>Sun, 14 Jul 2019 20:25:18 +0200</pubDate>
+      
+      <guid>https://siziksu.github.io/blog/kotlin-broadcast-channel-in-android/</guid>
+      <description>This post will explain how to use Kotlin Broadcast Channels in Android.</description>
+    </item>
     
     <item>
       <title>Kotlin also, apply, let, run and with</title>

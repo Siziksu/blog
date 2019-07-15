@@ -57,7 +57,7 @@ $ npm i nodemon -D    # Installs nodemon and adds it to the package.json as a de
 
 At this point your `package.json` file will look like this:
 
-{{< highlight Json >}}
+{{< highlight JSON >}}
 {
   "name": "package",
   "version": "1.0.0",
